@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>אלופי החשבון - מבדק כיתה ג'</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Canvas Confetti CDN לזיקוקים -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
+    body {
+      font-family: 'Rubik', sans-serif;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    /* בידוד כיווניות מתמטית משמאל לימין */
+    .math-exp {
+      direction: ltr !important;
+      unicode-bidi: isolate !important;
+      display: inline-block;
+      font-family: 'Rubik', sans-serif;
+    }
+    /* משבצות מחברת חשבון */
+    .notebook-grid {
+      background-size: 24px 24px;
+      background-image: 
+        linear-gradient(to right, rgba(99, 102, 241, 0.15) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(99, 102, 241, 0.15) 1px, transparent 1px);
+    }
+    .pulse-scale {
+      animation: pulse 1.8s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 min-h-screen text-slate-800 flex flex-col justify-between">
+
+  <!-- סרגל עליון -->
+  <header class="bg-white/90 backdrop-blur shadow-sm border-b border-indigo-100 py-3 px-4 sticky top-0 z-30 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <button id="btn-home" class="p-2 text-indigo-600 hover:bg-indigo-50 rounded-xl transition-all" title="חזרה לתפריט ראשי">
+        <i data-lucide="home" class="w-6 h-6"></i>
+      </button>
+      <div>
+        <h1 class="text-xl md:text-2xl font-black bg-gradient-to-l from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+          אלופי החשבון 🎯
+        </h1>
+        <p id="category-badge" class="text-xs text-indigo-500 font-semibold hidden"></p>
+      </div>
+    </div>
+
+    <!-- כפתורי שמע ומחברת -->
+    <div class="flex items-center gap-2">
+      <button id="btn-sound-toggle" class="p-2 text-indigo-700 bg-indigo-50 hover:bg-indigo-100 rounded-xl transition" title="צלילים ומוזיקה">
+        <i data-lucide="volume-2" id="sound-icon" class="w-5 h-5"></i>
+      </button>
+      <button id="btn-open-notebook" class="flex items-center gap-1.5 px-3 py-1.5 bg-amber-400 hover:bg-amber-500 text-amber-950 font-bold rounded-xl shadow-sm transition active:scale-95" title="פתח מחברת חישובים">
+        <i data-lucide="edit-3" class="w-4 h-4"></i>
+        <span>מחברת טיוטה</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- אזור תוכן ראשי -->
+  <main class="container mx-auto px-4 py-6 max-w-3xl flex-grow flex flex-col justify-center">
+
+    <!-- מסך 1: תפריט בחירת נושא -->
+    <div id="screen-menu" class="space-y-6">
+      <div class="text-center space-y-2">
+        <span class="inline-block px-3 py-1 bg-indigo-100 text-indigo-800 text-sm font-bold rounded-full">מבדק כיתה ג' 🏆</span>
+        <h2 class="text-2xl md:text-3xl font-black text-slate-800">בחרי נושא לתרגול:</h2>
+        <p class="text-slate-500 text-sm">עני נכון על 10 שאלות, אספי את כל חלקי הפאזל והרכיבי אותו בסיום!</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5" id="categories-container">
+        <!-- קטגוריות נוצרות דינמית ב-JS -->
+      </div>
+    </div>
+
+    <!-- מסך 2: משחק ושאלות -->
+    <div id="screen-game" class="hidden space-y-5">
+      <!-- מד התקדמות ופאזל שנאסף -->
+      <div class="bg-white p-4 rounded-2xl shadow-sm border border-indigo-100 space-y-3">
+        <div class="flex items-center justify-between text-sm font-bold text-slate-600">
+          <span id="question-counter">שאלה 1 מתוך 10</span>
+          <span class="flex items-center gap-1 text-amber-600">
+            <i data-lucide="puzzle" class="w-4 h-4"></i>
+            <span id="collected-pieces-counter">חלקי פאזל: 0/10</span>
+          </span>
+        </div>
+
+        <div class="w-full bg-slate-100 h-3 rounded-full overflow-hidden p-0.5">
+          <div id="progress-bar" class="bg-gradient-to-l from-indigo-500 to-purple-500 h-full rounded-full transition-all duration-300 w-0"></div>
+        </div>
+
+        <!-- תצוגת חלקי הפאזל שנאספו -->
+        <div class="flex items-center justify-center gap-1.5 pt-1" id="puzzle-mini-tracker">
+          <!-- 10 אייקונים של חלקים -->
+        </div>
+      </div>
+
+      <!-- כרטיסיית השאלה -->
+      <div class="bg-white rounded-3xl p-6 md:p-8 shadow-md border-2 border-indigo-100 space-y-6 relative overflow-hidden text-center">
+        <!-- עיטור רקע -->
+        <div class="absolute -top-10 -right-10 w-28 h-28 bg-indigo-50 rounded-full blur-2xl pointer-events-none"></div>
+
+        <div class="space-y-4">
+          <div id="q-category-label" class="text-xs font-black text-indigo-500 tracking-wide uppercase"></div>
+          
+          <!-- גוף השאלה -->
+          <div id="question-text" class="text-2xl md:text-3xl font-extrabold text-slate-800 leading-snug">
+            <!-- מלל שאלה -->
+          </div>
+
+          <!-- אזור עזר אופציונלי (למשל סרטוט ישר מספרים, צלחות עגבניות וכו') -->
+          <div id="question-visual" class="flex justify-center items-center py-2 min-h-[40px] empty:hidden"></div>
+        </div>
+
+        <!-- 4 תשובות אמריקאיות -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2" id="options-container">
+          <!-- כפתורי תשובה -->
+        </div>
+      </div>
+
+      <!-- הודעת משוב -->
+      <div id="feedback-msg" class="hidden text-center py-3 px-4 rounded-xl font-bold text-base transition-all"></div>
+    </div>
+
+    <!-- מסך 3: הרכבת הפאזל המלא -->
+    <div id="screen-puzzle" class="hidden space-y-6 text-center">
+      <div class="space-y-2">
+        <span class="inline-block px-3 py-1 bg-amber-100 text-amber-800 text-sm font-black rounded-full">כל הכבוד! אספת את כל 10 החלקים 🎉</span>
+        <h2 class="text-2xl md:text-3xl font-black text-slate-800">הרכיבי את הפאזל במקומו הנכון</h2>
+        <p class="text-slate-500 text-sm">התבונני בצבעי התמונה והפרטים. לחצי על חלק, ולאחר מכן לחצי על המשבצת המתאימה בלוח.</p>
+        <button id="btn-toggle-hint" class="inline-flex items-center gap-1.5 text-xs text-indigo-600 font-bold bg-indigo-50 hover:bg-indigo-100 px-3 py-1.5 rounded-lg border border-indigo-200 transition">
+          <i data-lucide="eye" class="w-4 h-4"></i>
+          <span>הצג / הסתר תמונה מנחה (רמז)</span>
+        </button>
+      </div>
+
+      <!-- תמונה מנחה קטנה (הצצה) -->
+      <div id="puzzle-hint-box" class="hidden flex-col items-center justify-center p-2 bg-white rounded-xl shadow-sm border border-slate-200 inline-block mx-auto">
+        <span class="text-xs text-slate-500 mb-1">התמונה המלאה:</span>
+        <div id="hint-image-preview" class="w-48 h-32 rounded-lg border overflow-hidden"></div>
+      </div>
+
+      <!-- לוח הפאזל (2 שורות על 5 עמודות = 10 חלקים) -->
+      <div class="bg-white p-4 md:p-6 rounded-3xl shadow-lg border border-indigo-100 inline-block mx-auto max-w-full">
+        <div id="puzzle-board" class="grid grid-cols-5 gap-1.5 w-[320px] sm:w-[460px] md:w-[540px] h-[190px] sm:h-[260px] md:h-[300px] border-4 border-slate-200 rounded-2xl p-1 bg-slate-100">
+          <!-- 10 תאי יעד (Drop Zones) ללא מספרים גלויים -->
+        </div>
+      </div>
+
+      <!-- מגש החלקים הזמינים להרכבה -->
+      <div class="space-y-2">
+        <div class="text-sm font-bold text-slate-600 flex items-center justify-center gap-2">
+          <span>חלקי הפאזל שלך (לחצי על חלק לבחירה):</span>
+        </div>
+        <div id="puzzle-pieces-pool" class="flex flex-wrap items-center justify-center gap-2.5 p-3 bg-white/70 backdrop-blur rounded-2xl border border-indigo-100 min-h-[90px]">
+          <!-- חלקי הפאזל המעורבבים (ללא מספרים) -->
+        </div>
+      </div>
+    </div>
+
+    <!-- מסך 4: ניצחון וזיקוקים -->
+    <div id="screen-victory" class="hidden text-center space-y-6">
+      <div class="bg-white p-8 rounded-3xl shadow-xl border-4 border-amber-300 space-y-5 max-w-lg mx-auto relative overflow-hidden">
+        <div class="text-6xl animate-bounce">👑</div>
+        <h2 class="text-3xl md:text-4xl font-black text-indigo-900">אלופה אמיתית!</h2>
+        <p class="text-lg font-bold text-slate-600">השלמת את כל המשימות והרכבת את הפאזל המושלם!</p>
+        
+        <!-- התמונה המורכבת הסופית -->
+        <div id="victory-puzzle-display" class="w-full h-48 md:h-56 rounded-2xl border-4 border-indigo-200 shadow-md overflow-hidden mx-auto"></div>
+
+        <div class="pt-2 flex flex-col gap-3">
+          <button id="btn-play-again" class="w-full py-3.5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-extrabold text-lg rounded-2xl shadow-lg transition transform active:scale-95">
+            לשחק שוב / לבחור נושא אחר 🔄
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- חלונית מחברת טיוטה וחישובים (מופיעה בלחיצה על כפתור מחברת) -->
+  <div id="notebook-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center p-3">
+    <div class="bg-white rounded-3xl shadow-2xl w-full max-w-2xl flex flex-col overflow-hidden border-4 border-amber-400 max-h-[90vh]">
+      <!-- כותרת המחברת וכפתורים -->
+      <div class="bg-amber-400 px-4 py-3 flex items-center justify-between text-amber-950">
+        <div class="flex items-center gap-2 font-black text-lg">
+          <i data-lucide="edit-3" class="w-5 h-5"></i>
+          <span>מחברת חישובים וטיוטה (משבצות)</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <!-- כפתור מחיקת הכל -->
+          <button id="btn-clear-canvas" class="px-2.5 py-1 text-xs font-bold bg-white/80 hover:bg-white text-rose-600 rounded-lg transition" title="נקה מחברת">
+            מחק הכל
+          </button>
+          <!-- סגירה -->
+          <button id="btn-close-notebook" class="p-1 hover:bg-amber-500 rounded-lg transition">
+            <i data-lucide="x" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- סרגל צבעים ועובי טוש -->
+      <div class="bg-amber-50 border-b border-amber-200 px-4 py-2 flex items-center justify-between flex-wrap gap-2 text-xs font-bold text-amber-900">
+        <div class="flex items-center gap-2">
+          <span>צבע:</span>
+          <button class="color-btn w-6 h-6 rounded-full bg-slate-900 ring-2 ring-indigo-500 scale-110" data-color="#0f172a"></button>
+          <button class="color-btn w-6 h-6 rounded-full bg-blue-600" data-color="#2563eb"></button>
+          <button class="color-btn w-6 h-6 rounded-full bg-rose-600" data-color="#e11d48"></button>
+          <button class="color-btn w-6 h-6 rounded-full bg-emerald-600" data-color="#059669"></button>
+        </div>
+        <div class="flex items-center gap-2">
+          <span>עובי קו:</span>
+          <button class="size-btn px-2 py-0.5 rounded bg-amber-200" data-size="2">דק</button>
+          <button class="size-btn px-2 py-0.5 rounded bg-amber-300 font-bold" data-size="4">בינוני</button>
+          <button class="size-btn px-2 py-0.5 rounded bg-amber-200" data-size="7">עבה</button>
+        </div>
+      </div>
+
+      <!-- משטח הציור (קנבס עם רקע משבצות חשבון) -->
+      <div class="relative flex-grow h-[360px] sm:h-[420px] bg-white notebook-grid cursor-crosshair overflow-hidden touch-none">
+        <canvas id="notebook-canvas" class="w-full h-full block"></canvas>
+      </div>
+
+      <div class="bg-slate-50 px-4 py-3 flex items-center justify-between border-t border-slate-100">
+        <span class="text-xs text-slate-500">שרבטי וחשבי בטור. בסיום סגרי וסמני תשובה!</span>
+        <button id="btn-done-notebook" class="px-5 py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl text-sm transition">
+          סיום וחזרה לשאלה ✔️
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-3 text-center text-xs text-slate-400">
+    נבנה בהצלחה ובהנאה עבור התרגול והמבדק 🌟
+  </footer>
+
+  <!-- לוגיקת האפליקציה -->
+  <script>
+    /* ========================================================
+       1. מאגר הנתונים של השאלות והקטגוריות (ללא שליליים, עד 100)
+       ======================================================== */
+    const CATEGORIES = [
+      {
+        id: 'decimal',
+        title: 'מבנה עשרוני בתחום הרבבה',
+        desc: 'עוקב וקודם, ייצוג במספרים ובמילים, סדרות וישר המספרים',
+        icon: 'binary',
+        color: 'from-blue-500 to-cyan-500',
+        puzzleTheme: 'space' // נושא תמונת הפאזל
+      },
+      {
+        id: 'order',
+        title: 'סדר פעולות חשבון',
+        desc: 'כפל, חילוק, חיבור וחיסור לפי פירמידת הסדר (כולל סוגריים)',
+        icon: 'layers',
+        color: 'from-purple-500 to-indigo-500',
+        puzzleTheme: 'castle'
+      },
+      {
+        id: 'unknown',
+        title: 'תרגיל עם נעלם',
+        desc: 'השלמת מספר חסר בחיבור, חיסור, כפל וחילוק',
+        icon: 'help-circle',
+        color: 'from-amber-500 to-orange-500',
+        puzzleTheme: 'underwater'
+      },
+      {
+        id: 'word',
+        title: 'שאלות מילוליות',
+        desc: 'כדורים בסלים, עודף ומטבעות, עגבניות בצלחות ובעיות יומיום',
+        icon: 'book-open',
+        color: 'from-emerald-500 to-teal-500',
+        puzzleTheme: 'safari'
+      },
+      {
+        id: 'four_ops',
+        title: '4 פעולות חשבון',
+        desc: 'חיבור וחיסור בטור, כפל וחילוק במספרים טבעיים (עד 100)',
+        icon: 'calculator',
+        color: 'from-rose-500 to-pink-500',
+        puzzleTheme: 'fairyland'
+      },
+      {
+        id: 'length',
+        title: 'מדידות אורך',
+        desc: 'סנטימטר, מטר, המרות, השוואת אורכים וחישוב היקפים',
+        icon: 'ruler',
+        color: 'from-violet-500 to-fuchsia-500',
+        puzzleTheme: 'garden'
+      },
+      {
+        id: 'mix',
+        title: 'קטגוריית מיקס 🌟',
+        desc: 'אתגר מעורב הכולל שאלות מכל הנושאים יחד!',
+        icon: 'sparkles',
+        color: 'from-amber-400 via-pink-500 to-indigo-600',
+        puzzleTheme: 'amusement_park'
+      }
+    ];
+
+    // בנק שאלות מפורט ומדויק - שאלות המבדק המקוריות + שאלות בסגנון זהה
+    const QUESTIONS_DB = {
+      decimal: [
+        {
+          q: 'מהו המספר העוקב של המספר 509?',
+          options: ['510', '508', '590', '600'],
+          ans: '510',
+          visual: ''
+        },
+        {
+          q: 'מי מבין המספרים הבאים שווה ערך ל: 7 יחידות ועוד 30 עשרות?',
+          options: ['307', '370', '730', '37'],
+          ans: '307',
+          visual: ''
+        },
+        {
+          q: 'השלימי את המספר החסר בסדרה: 61, 64, 67, __, 73, 76',
+          options: ['70', '69', '71', '68'],
+          ans: '70',
+          visual: ''
+        },
+        {
+          q: 'איך כותבים במילים את המספר 509?',
+          options: ['חמש מאות ותשע', 'חמש מאות ותשעים', 'חמישים ותשע', 'חמשת אלפים ותשע'],
+          ans: 'חמש מאות ותשע',
+          visual: ''
+        },
+        {
+          q: 'מהו המספר הקודם למספר 80?',
+          options: ['79', '81', '70', '69'],
+          ans: '79',
+          visual: ''
+        },
+        {
+          q: 'מהספרות 2, 5, ו-7 בנו מספר דו-ספרתי שהספרה 7 היא ספרת העשרות שלו:',
+          options: ['72', '27', '57', '25'],
+          ans: '72',
+          visual: ''
+        },
+        {
+          q: 'מהספרות 2, 5, ו-7 בנו מספר דו-ספרתי שהספרה 2 היא ספרת העשרות שלו:',
+          options: ['27', '72', '52', '75'],
+          ans: '27',
+          visual: ''
+        },
+        {
+          q: 'השלימי את המספר החסר בסדרה: 40, 50, 60, __, 80',
+          options: ['70', '65', '75', '90'],
+          ans: '70',
+          visual: ''
+        },
+        {
+          q: 'איזה מספר נמצא בדיוק באמצע ישר המספרים בין 0 ל-100?',
+          options: ['50', '40', '60', '55'],
+          ans: '50',
+          visual: ''
+        },
+        {
+          q: 'כמה עשרות יש במספר 90?',
+          options: ['9', '90', '0', '19'],
+          ans: '9',
+          visual: ''
+        }
+      ],
+
+      order: [
+        {
+          q: 'חשבי לפי סדר פעולות חשבון: <span class="math-exp">20 - 4 × 3 = ?</span>',
+          options: ['8', '48', '12', '16'],
+          ans: '8',
+          visual: ''
+        },
+        {
+          q: 'חשבי לפי סדר פעולות חשבון: <span class="math-exp">5 + 6 × 4 = ?</span>',
+          options: ['29', '44', '24', '35'],
+          ans: '29',
+          visual: ''
+        },
+        {
+          q: 'חשבי לפי סדר פעולות חשבון: <span class="math-exp">(25 + 5) : 3 = ?</span>',
+          options: ['10', '30', '15', '8'],
+          ans: '10',
+          visual: ''
+        },
+        {
+          q: 'חשבי לפי סדר פעולות חשבון: <span class="math-exp">40 - 10 : 2 = ?</span>',
+          options: ['35', '15', '20', '30'],
+          ans: '35',
+          visual: ''
+        },
+        {
+          q: 'חשבי לפי סדר פעולות חשבון: <span class="math-exp">8 × 5 - 15 = ?</span>',
+          options: ['25', '40', '20', '35'],
+          ans: '25',
+          visual: ''
+        },
+        {
+          q: 'חשבי לפי סדר פעולות חשבון: <span class="math-exp">18 + 12 : 6 = ?</span>',
+          options: ['20', '5', '22', '15'],
+          ans: '20',
+          visual: ''
+        },
+        {
+          q: 'חשבי לפי סדר פעולות חשבון: <span class="math-exp">(50 - 20) : 5 = ?</span>',
+          options: ['6', '10', '15', '30'],
+          ans: '6',
+          visual: ''
+        },
+        {
+          q: 'חשבי לפי סדר פעולות חשבון: <span class="math-exp">3 × 7 + 4 = ?</span>',
+          options: ['25', '33', '28', '21'],
+          ans: '25',
+          visual: ''
+        },
+        {
+          q: 'חשבי לפי סדר פעולות חשבון: <span class="math-exp">36 : 4 + 7 = ?</span>',
+          options: ['16', '9', '18', '20'],
+          ans: '16',
+          visual: ''
+        },
+        {
+          q: 'חשבי לפי סדר פעולות חשבון: <span class="math-exp">15 + 5 × 5 = ?</span>',
+          options: ['40', '100', '30', '25'],
+          ans: '40',
+          visual: ''
+        }
+      ],
+
+      unknown: [
+        {
+          q: 'השלימי את המספר החסר בתרגיל: <span class="math-exp">36 + ___ = 56</span>',
+          options: ['20', '22', '16', '30'],
+          ans: '20',
+          visual: ''
+        },
+        {
+          q: 'השלימי את המספר החסר בתרגיל: <span class="math-exp">70 - ___ = 32</span>',
+          options: ['38', '42', '32', '48'],
+          ans: '38',
+          visual: ''
+        },
+        {
+          q: 'השלימי את המספר החסר בתרגיל: <span class="math-exp">___ × 4 = 24</span>',
+          options: ['6', '8', '5', '7'],
+          ans: '6',
+          visual: ''
+        },
+        {
+          q: 'השלימי את המספר החסר בתרגיל: <span class="math-exp">83 - ___ = 47</span>',
+          options: ['36', '46', '34', '44'],
+          ans: '36',
+          visual: ''
+        },
+        {
+          q: 'השלימי את המספר החסר בתרגיל: <span class="math-exp">___ - 29 = 41</span>',
+          options: ['70', '68', '72', '60'],
+          ans: '70',
+          visual: ''
+        },
+        {
+          q: 'השלימי את המספר החסר בתרגיל: <span class="math-exp">___ : 5 = 7</span>',
+          options: ['35', '30', '40', '25'],
+          ans: '35',
+          visual: ''
+        },
+        {
+          q: 'השלימי את המספר החסר בתרגיל: <span class="math-exp">18 + ___ = 45</span>',
+          options: ['27', '37', '23', '25'],
+          ans: '27',
+          visual: ''
+        },
+        {
+          q: 'השלימי את המספר החסר בתרגיל: <span class="math-exp">9 × ___ = 54</span>',
+          options: ['6', '7', '8', '5'],
+          ans: '6',
+          visual: ''
+        },
+        {
+          q: 'השלימי את המספר החסר בתרגיל: <span class="math-exp">60 - ___ = 15</span>',
+          options: ['45', '35', '55', '40'],
+          ans: '45',
+          visual: ''
+        },
+        {
+          q: 'השלימי את המספר החסר בתרגיל: <span class="math-exp">___ : 3 = 9</span>',
+          options: ['27', '18', '24', '30'],
+          ans: '27',
+          visual: ''
+        }
+      ],
+
+      word: [
+        {
+          q: 'רון מסדר כדורים בתוך 4 סלים. בכל סל הוא מניח 7 כדורים.<br>איזה תרגיל מתאר את מספר הכדורים שסידר רון?',
+          options: ['<span class="math-exp">7 × 4</span>', '<span class="math-exp">7 + 4</span>', '<span class="math-exp">7 - 4</span>', '<span class="math-exp">7 : 4</span>'],
+          ans: '<span class="math-exp">7 × 4</span>',
+          visual: ''
+        },
+        {
+          q: 'לרון יש 30 כדורים והוא מסדר 7 כדורים בכל סל (ב-4 סלים בסך הכל 28).<br>האם נשארו כדורים שאין להם מקום בסלים, וכמה?',
+          options: ['כן, נשארו 2 כדורים', 'לא, הכל נכנס בדיוק', 'כן, נשאר כדור 1', 'כן, נשארו 4 כדורים'],
+          ans: 'כן, נשארו 2 כדורים',
+          visual: ''
+        },
+        {
+          q: 'הדר קנתה כדור במחיר של 27 שקלים. היא שילמה בשטר של 50 שקלים.<br>כמה עודף קיבלה הדר?',
+          options: ['23 שקלים', '33 שקלים', '27 שקלים', '13 שקלים'],
+          ans: '23 שקלים',
+          visual: ''
+        },
+        {
+          q: 'הדר קיבלה עודף של 23 שקלים. איזה שילוב מטבעות נותן בדיוק 23 שקלים?',
+          options: [
+            '2 מטבעות של 10 ש"ח ו-3 מטבעות של שקל',
+            'מטבע 1 של 10 ש"ח ו-2 מטבעות של 5 ש"ח',
+            '4 מטבעות של 5 ש"ח',
+            '3 מטבעות של 10 ש"ח'
+          ],
+          ans: '2 מטבעות של 10 ש"ח ו-3 מטבעות של שקל',
+          visual: ''
+        },
+        {
+          q: 'באיור רואים 4 צלחות, ובכל צלחת יש 5 עגבניות.<br>איזה תרגיל כפל מייצג את מספר העגבניות?',
+          options: ['<span class="math-exp">4 × 5 = 20</span>', '<span class="math-exp">4 + 5 = 9</span>', '<span class="math-exp">5 - 4 = 1</span>', '<span class="math-exp">20 : 5 = 4</span>'],
+          ans: '<span class="math-exp">4 × 5 = 20</span>',
+          visual: '<div class="flex gap-2 text-2xl">🍅🍅🍅🍅🍅 | 🍅🍅🍅🍅🍅 | 🍅🍅🍅🍅🍅 | 🍅🍅🍅🍅🍅</div>'
+        },
+        {
+          q: 'בחבילת מדבקות יש 24 מדבקות. דנה חילקה אותן שווה בשווה בין 4 חברות.<br>כמה מדבקות קיבלה כל חברה?',
+          options: ['6 מדבקות', '8 מדבקות', '4 מדבקות', '5 מדבקות'],
+          ans: '6 מדבקות',
+          visual: ''
+        },
+        {
+          q: 'בחנות יש 3 מארזים של טושים, ובכל מארז יש 8 טושים.<br>כמה טושים יש בסך הכל בחנות?',
+          options: ['24 טושים', '21 טושים', '11 טושים', '27 טושים'],
+          ans: '24 טושים',
+          visual: ''
+        },
+        {
+          q: 'יונתן אסף 35 צדפים בחוף הים ונתן לאחותו 12 צדפים.<br>כמה צדפים נשארו ליונתן?',
+          options: ['23 צדפים', '25 צדפים', '47 צדפים', '22 צדפים'],
+          ans: '23 צדפים',
+          visual: ''
+        },
+        {
+          q: 'בכיתה יש 30 תלמידים. המורה חילקה אותם לקבוצות של 5 תלמידים.<br>כמה קבוצות נוצרו?',
+          options: ['6 קבוצות', '5 קבוצות', '7 קבוצות', '8 קבוצות'],
+          ans: '6 קבוצות',
+          visual: ''
+        },
+        {
+          q: 'אמא אפתה 2 מגשים של עוגיות, בכל מגש 10 עוגיות. הילדים אכלו 4 עוגיות.<br>כמה עוגיות נשארו?',
+          options: ['16 עוגיות', '14 עוגיות', '24 עוגיות', '18 עוגיות'],
+          ans: '16 עוגיות',
+          visual: ''
+        }
+      ],
+
+      four_ops: [
+        {
+          q: 'חשבי את תוצאת התרגיל: <span class="math-exp">56 + 40 = ?</span>',
+          options: ['96', '86', '90', '16'],
+          ans: '96',
+          visual: ''
+        },
+        {
+          q: 'חשבי את תוצאת התרגיל: <span class="math-exp">48 - 38 = ?</span>',
+          options: ['10', '18', '12', '8'],
+          ans: '10',
+          visual: ''
+        },
+        {
+          q: 'חשבי את תוצאת התרגיל: <span class="math-exp">17 + 27 + 23 = ?</span>',
+          options: ['67', '57', '77', '63'],
+          ans: '67',
+          visual: ''
+        },
+        {
+          q: 'חשבי את תוצאת התרגיל: <span class="math-exp">96 - 78 = ?</span>',
+          options: ['18', '28', '16', '22'],
+          ans: '18',
+          visual: ''
+        },
+        {
+          q: 'חשבי את תוצאת התרגיל: <span class="math-exp">2 × 4 = ?</span>',
+          options: ['8', '6', '10', '12'],
+          ans: '8',
+          visual: ''
+        },
+        {
+          q: 'חשבי את תוצאת התרגיל: <span class="math-exp">14 : 2 = ?</span>',
+          options: ['7', '6', '8', '12'],
+          ans: '7',
+          visual: ''
+        },
+        {
+          q: 'חשבי את תוצאת התרגיל: <span class="math-exp">7 × 6 = ?</span>',
+          options: ['42', '48', '36', '49'],
+          ans: '42',
+          visual: ''
+        },
+        {
+          q: 'חשבי את תוצאת התרגיל: <span class="math-exp">35 + 25 = ?</span>',
+          options: ['60', '50', '65', '55'],
+          ans: '60',
+          visual: ''
+        },
+        {
+          q: 'חשבי את תוצאת התרגיל: <span class="math-exp">72 : 8 = ?</span>',
+          options: ['9', '8', '7', '6'],
+          ans: '9',
+          visual: ''
+        },
+        {
+          q: 'חשבי את תוצאת התרגיל: <span class="math-exp">85 - 29 = ?</span>',
+          options: ['56', '66', '54', '64'],
+          ans: '56',
+          visual: ''
+        }
+      ],
+
+      length: [
+        {
+          q: 'כמה סנטימטרים יש ב-1 מטר?',
+          options: ['100 ס"מ', '10 ס"מ', '1,000 ס"מ', '50 ס"מ'],
+          ans: '100 ס"מ',
+          visual: ''
+        },
+        {
+          q: 'אורכו של סרגל בכיתה הוא 30 ס"מ. חיברו שני סרגלים כאלה ברצף.<br>מהו האורך הכולל של שני הסרגלים יחד?',
+          options: ['60 ס"מ', '50 ס"מ', '70 ס"מ', '32 ס"מ'],
+          ans: '60 ס"מ',
+          visual: ''
+        },
+        {
+          q: 'החוט של רוני היה באורך 85 ס"מ. רוני גזרה ממנו חתיכה באורך 25 ס"מ.<br>מה אורך החוט שנשאר?',
+          options: ['60 ס"מ', '65 ס"מ', '55 ס"מ', '70 ס"מ'],
+          ans: '60 ס"מ',
+          visual: ''
+        },
+        {
+          q: 'באיזו יחידת מידה הכי מתאים למדוד את אורכו של עיפרון קלמר?',
+          options: ['סנטימטר (ס"מ)', 'מטר (מ\')', 'קילומטר (ק"מ)', 'מילימטר בלבד'],
+          ans: 'סנטימטר (ס"מ)',
+          visual: ''
+        },
+        {
+          q: 'השולחן בכיתה הוא באורך 90 ס"מ. המחברת באורך 30 ס"מ.<br>בכמה ס"מ השולחן ארוך יותר מהמחברת?',
+          options: ['60 ס"מ', '50 ס"מ', '120 ס"מ', '30 ס"מ'],
+          ans: '60 ס"מ',
+          visual: ''
+        },
+        {
+          q: 'לסוכה נדרש סרט קישוט באורך 1 מטר. לדנה יש סרט באורך 75 ס"מ.<br>כמה סנטימטרים חסרים לה כדי להגיע ל-1 מטר (100 ס"מ)?',
+          options: ['25 ס"מ', '35 ס"מ', '15 ס"מ', '20 ס"מ'],
+          ans: '25 ס"מ',
+          visual: ''
+        },
+        {
+          q: 'היקף של ריבוע מחושב בחיבור 4 צלעותיו. אם אורך כל צלע הוא 5 ס"מ, מהו היקף הריבוע?',
+          options: ['20 ס"מ', '15 ס"מ', '25 ס"מ', '10 ס"מ'],
+          ans: '20 ס"מ',
+          visual: ''
+        },
+        {
+          q: 'אורכו של צעד של נועם הוא 40 ס"מ. נועם עשה 2 צעדים.<br>איזה מרחק עבר?',
+          options: ['80 ס"מ', '60 ס"מ', '42 ס"מ', '100 ס"מ'],
+          ans: '80 ס"מ',
+          visual: ''
+        },
+        {
+          q: 'איזה אורך גדול יותר?',
+          options: ['1 מטר', '80 ס"מ', '50 ס"מ', '95 ס"מ'],
+          ans: '1 מטר',
+          visual: ''
+        },
+        {
+          q: 'נמלה הלכה 15 ס"מ, נחה, ואז הלכה עוד 35 ס"מ.<br>כמה סנטימטרים הלכה הנמלה בסך הכל?',
+          options: ['50 ס"מ', '45 ס"מ', '55 ס"מ', '40 ס"מ'],
+          ans: '50 ס"מ',
+          visual: ''
+        }
+      ]
+    };
+
+    /* יצירת קטגוריית מיקס (לוקחת 10 שאלות מעורבבות מכל הנושאים) */
+    function getMixQuestions() {
+      const allPool = [
+        ...QUESTIONS_DB.decimal,
+        ...QUESTIONS_DB.order,
+        ...QUESTIONS_DB.unknown,
+        ...QUESTIONS_DB.word,
+        ...QUESTIONS_DB.four_ops,
+        ...QUESTIONS_DB.length
+      ];
+      // ערבוב ובחירת 10
+      return [...allPool].sort(() => 0.5 - Math.random()).slice(0, 10);
+    }
+
+    /* ========================================================
+       2. מערך צבעים ואיורים לפאזלים (לפי קטגוריה)
+       ======================================================== */
+    const PUZZLE_THEMES = {
+      space: {
+        name: 'מסע בחלל',
+        gradient: 'linear-gradient(135deg, #0f172a 0%, #312e81 40%, #701a75 75%, #f43f5e 100%)',
+        emoji: '🚀'
+      },
+      castle: {
+        name: 'טירת האבירים',
+        gradient: 'linear-gradient(135deg, #38bdf8 0%, #818cf8 40%, #4f46e5 75%, #312e81 100%)',
+        emoji: '🏰'
+      },
+      underwater: {
+        name: 'ממלכת המצולות',
+        gradient: 'linear-gradient(135deg, #06b6d4 0%, #0284c7 40%, #0369a1 75%, #0c4a6e 100%)',
+        emoji: '🐬'
+      },
+      safari: {
+        name: 'ספארי בטבע',
+        gradient: 'linear-gradient(135deg, #fef08a 0%, #ca8a04 40%, #15803d 75%, #14532d 100%)',
+        emoji: '🦁'
+      },
+      fairyland: {
+        name: 'ארץ האגדות',
+        gradient: 'linear-gradient(135deg, #fbcfe8 0%, #f472b6 40%, #a855f7 75%, #6b21a8 100%)',
+        emoji: '🦄'
+      },
+      garden: {
+        name: 'גינת הפרפרים',
+        gradient: 'linear-gradient(135deg, #a7f3d0 0%, #34d399 40%, #059669 75%, #047857 100%)',
+        emoji: '🦋'
+      },
+      amusement_park: {
+        name: 'לונה פארק הקסמים',
+        gradient: 'linear-gradient(135deg, #fde047 0%, #fb923c 35%, #ec4899 70%, #8b5cf6 100%)',
+        emoji: '🎡'
+      }
+    };
+
+    /* ========================================================
+       3. ניהול מצב האפליקציה (State)
+       ======================================================== */
+    let currentCategory = null;
+    let currentQuestions = [];
+    let currentQuestionIdx = 0;
+    let collectedPieces = 0;
+    let selectedPieceId = null;
+    let placedPieces = {}; // pieceId -> slotIndex
+    let soundEnabled = true;
+
+    // רכיב שמע בסיסי בעזרת Web Audio API (צלילי הצלחה, שגיאה וניגון מנגינת ניצחון)
+    let audioCtx = null;
+    function initAudio() {
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+    }
+
+    function playTone(freq, type, duration, delay = 0) {
+      if (!soundEnabled) return;
+      initAudio();
+      setTimeout(() => {
+        try {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = type;
+          osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+          gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start();
+          osc.stop(audioCtx.currentTime + duration);
+        } catch(e) {}
+      }, delay);
+    }
+
+    function playSoundSuccess() {
+      playTone(523.25, 'triangle', 0.15, 0);   // C5
+      playTone(659.25, 'triangle', 0.2, 100);  // E5
+      playTone(783.99, 'triangle', 0.3, 200);  // G5
+    }
+
+    function playSoundError() {
+      playTone(220, 'sawtooth', 0.2, 0);
+      playTone(196, 'sawtooth', 0.3, 120);
+    }
+
+    function playVictoryMelody() {
+      if (!soundEnabled) return;
+      // מנגינת שמחה וחגיגה קצרה
+      const notes = [
+        { f: 523, d: 0.2, t: 0 },
+        { f: 659, d: 0.2, t: 180 },
+        { f: 783, d: 0.2, t: 360 },
+        { f: 1046, d: 0.45, t: 540 },
+        { f: 783, d: 0.2, t: 800 },
+        { f: 1046, d: 0.6, t: 1000 }
+      ];
+      notes.forEach(n => playTone(n.f, 'triangle', n.d, n.t));
+    }
+
+    /* ========================================================
+       4. אתחול והצגת קטגוריות
+       ======================================================== */
+    const categoriesContainer = document.getElementById('categories-container');
+    function renderCategories() {
+      categoriesContainer.innerHTML = '';
+      CATEGORIES.forEach(cat => {
+        const card = document.createElement('div');
+        card.className = "bg-white p-4 rounded-2xl shadow-sm hover:shadow-md border border-slate-100 hover:border-indigo-300 transition-all cursor-pointer flex items-center justify-between group transform hover:-translate-y-0.5";
+        card.innerHTML = `
+          <div class="flex items-center gap-3.5">
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr ${cat.color} text-white flex items-center justify-center shadow-md">
+              <i data-lucide="${cat.icon}" class="w-6 h-6"></i>
+            </div>
+            <div class="text-right">
+              <h3 class="font-extrabold text-slate-800 group-hover:text-indigo-600 transition">${cat.title}</h3>
+              <p class="text-xs text-slate-500 line-clamp-1">${cat.desc}</p>
+            </div>
+          </div>
+          <div class="p-2 text-slate-300 group-hover:text-indigo-600 group-hover:translate-x-[-4px] transition">
+            <i data-lucide="chevron-left" class="w-5 h-5"></i>
+          </div>
+        `;
+        card.onclick = () => startCategory(cat.id);
+        categoriesContainer.appendChild(card);
+      });
+      lucide.createIcons();
+    }
+
+    /* התחלת משחק בקטגוריה נבחרת */
+    function startCategory(catId) {
+      initAudio();
+      currentCategory = CATEGORIES.find(c => c.id === catId);
+      if (catId === 'mix') {
+        currentQuestions = getMixQuestions();
+      } else {
+        currentQuestions = [...QUESTIONS_DB[catId]].sort(() => 0.5 - Math.random());
+      }
+      currentQuestionIdx = 0;
+      collectedPieces = 0;
+      placedPieces = {};
+      selectedPieceId = null;
+
+      // עדכון תצוגה
+      document.getElementById('category-badge').textContent = currentCategory.title;
+      document.getElementById('category-badge').classList.remove('hidden');
+
+      showScreen('game');
+      renderQuestion();
+      updateMiniPuzzleTracker();
+    }
+
+    /* עדכון חיווי חלקי הפאזל */
+    function updateMiniPuzzleTracker() {
+      const tracker = document.getElementById('puzzle-mini-tracker');
+      tracker.innerHTML = '';
+      for (let i = 0; i < 10; i++) {
+        const dot = document.createElement('div');
+        if (i < collectedPieces) {
+          dot.className = "w-4 h-4 rounded-md bg-amber-400 border border-amber-500 shadow-sm flex items-center justify-center text-[10px] text-amber-950 font-bold";
+          dot.innerHTML = "🧩";
+        } else {
+          dot.className = "w-4 h-4 rounded-md bg-slate-200 border border-slate-300";
+        }
+        tracker.appendChild(dot);
+      }
+      document.getElementById('collected-pieces-counter').textContent = `חלקי פאזל: ${collectedPieces}/10`;
+      document.getElementById('progress-bar').style.width = `${(currentQuestionIdx / 10) * 100}%`;
+      document.getElementById('question-counter').textContent = `שאלה ${currentQuestionIdx + 1} מתוך 10`;
+    }
+
+    /* הצגת שאלה נוכחית */
+    function renderQuestion() {
+      const q = currentQuestions[currentQuestionIdx];
+      document.getElementById('q-category-label').textContent = currentCategory.title;
+      document.getElementById('question-text').innerHTML = q.q;
+      
+      const visualElem = document.getElementById('question-visual');
+      if (q.visual) {
+        visualElem.innerHTML = q.visual;
+        visualElem.classList.remove('hidden');
+      } else {
+        visualElem.innerHTML = '';
+        visualElem.classList.add('hidden');
+      }
+
+      // מחיקת משוב קודם
+      const feedback = document.getElementById('feedback-msg');
+      feedback.className = "hidden";
+      feedback.innerHTML = "";
+
+      // ערבוב והצגת 4 אפשרויות אמריקאיות
+      const optionsContainer = document.getElementById('options-container');
+      optionsContainer.innerHTML = '';
+      const shuffledOptions = [...q.options].sort(() => 0.5 - Math.random());
+
+      shuffledOptions.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.className = "py-4 px-4 bg-slate-50 hover:bg-indigo-50 border-2 border-slate-200 hover:border-indigo-400 rounded-2xl text-lg md:text-xl font-bold text-slate-800 transition active:scale-95 shadow-sm hover:shadow text-center flex items-center justify-center min-h-[64px]";
+        btn.innerHTML = `<span class="math-exp">${opt}</span>`;
+        btn.onclick = () => handleAnswer(opt, btn, q.ans);
+        optionsContainer.appendChild(btn);
+      });
+
+      updateMiniPuzzleTracker();
+    }
+
+    /* טיפול בבחירת תשובה */
+    function handleAnswer(selectedOpt, btnElem, correctAns) {
+      // נטרול לחיצות כפולות
+      const allBtns = document.querySelectorAll('#options-container button');
+      allBtns.forEach(b => b.disabled = true);
+
+      const feedback = document.getElementById('feedback-msg');
+
+      if (selectedOpt === correctAns) {
+        // תשובה נכונה
+        playSoundSuccess();
+        btnElem.classList.remove('bg-slate-50', 'border-slate-200');
+        btnElem.classList.add('bg-emerald-100', 'border-emerald-500', 'text-emerald-900', 'scale-102');
+        
+        collectedPieces++;
+        feedback.className = "block bg-emerald-100 border border-emerald-300 text-emerald-900 font-bold py-2.5 px-4 rounded-xl text-center animate-fade-in";
+        feedback.innerHTML = "כל הכבוד! תשובה נכונה! קיבלת חלק של פאזל 🧩";
+
+        setTimeout(() => {
+          currentQuestionIdx++;
+          if (currentQuestionIdx < 10) {
+            renderQuestion();
+          } else {
+            // סיום 10 שאלות -> מעבר למסך הרכבת הפאזל
+            openPuzzleAssemblyScreen();
+          }
+        }, 1200);
+
+      } else {
+        // תשובה שגויה
+        playSoundError();
+        btnElem.classList.remove('bg-slate-50', 'border-slate-200');
+        btnElem.classList.add('bg-rose-100', 'border-rose-500', 'text-rose-900');
+
+        feedback.className = "block bg-rose-100 border border-rose-300 text-rose-900 font-bold py-2.5 px-4 rounded-xl text-center";
+        feedback.innerHTML = "לא נורא, נסי שוב! פתחי את המחברת לחישוב בטור במידת הצורך 📝";
+
+        setTimeout(() => {
+          allBtns.forEach(b => b.disabled = false);
+          btnElem.classList.remove('bg-rose-100', 'border-rose-500', 'text-rose-900');
+          btnElem.classList.add('bg-slate-50', 'border-slate-200');
+          feedback.className = "hidden";
+        }, 1500);
+      }
+    }
+
+    /* ========================================================
+       5. מסך הרכבת הפאזל (ללא מספרים רשומים על החלקים)
+       ======================================================== */
+    function openPuzzleAssemblyScreen() {
+      showScreen('puzzle');
+      buildPuzzleGame();
+    }
+
+    function buildPuzzleGame() {
+      const theme = PUZZLE_THEMES[currentCategory.puzzleTheme] || PUZZLE_THEMES.space;
+      const board = document.getElementById('puzzle-board');
+      const pool = document.getElementById('puzzle-pieces-pool');
+      const hintPreview = document.getElementById('hint-image-preview');
+
+      // יצירת התמונה המלאה ברקע
+      hintPreview.style.background = theme.gradient;
+      hintPreview.innerHTML = `<div class="w-full h-full flex items-center justify-center text-4xl">${theme.emoji}</div>`;
+
+      board.innerHTML = '';
+      pool.innerHTML = '';
+      placedPieces = {};
+      selectedPieceId = null;
+
+      // 10 משבצות יעד בלוח (רשת של 2 שורות על 5 עמודות) ללא מספרים
+      for (let slot = 0; slot < 10; slot++) {
+        const slotEl = document.createElement('div');
+        slotEl.className = "relative rounded-xl border-2 border-dashed border-slate-300 bg-white flex items-center justify-center cursor-pointer transition hover:border-indigo-400 overflow-hidden";
+        slotEl.dataset.slotIndex = slot;
+        slotEl.onclick = () => handleSlotClick(slot, slotEl);
+        board.appendChild(slotEl);
+      }
+
+      // יצירת 10 חלקי פאזל - ללא שום מספר עליהם
+      // כל חלק מקבל חלק מובנה מתוך גרדיאנט הרקע והאייקון של התמונה
+      const pieceIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].sort(() => 0.5 - Math.random());
+
+      pieceIds.forEach(pieceIdx => {
+        const pieceEl = createPuzzlePieceElement(pieceIdx, theme);
+        pool.appendChild(pieceEl);
+      });
+    }
+
+    /* יצירת אלמנט של חלק פאזל עם גזיר ויזואלי של התמונה */
+    function createPuzzlePieceElement(pieceIdx, theme) {
+      const el = document.createElement('div');
+      el.id = `piece-${pieceIdx}`;
+      el.className = "w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-16 rounded-xl border-2 border-indigo-200 cursor-pointer shadow-md hover:shadow-lg transition-transform transform hover:scale-105 relative overflow-hidden flex items-center justify-center";
+      el.dataset.pieceId = pieceIdx;
+
+      // חישוב רקע חלק התמונה: 5 עמודות, 2 שורות
+      const col = pieceIdx % 5;
+      const row = Math.floor(pieceIdx / 5);
+      
+      el.style.background = theme.gradient;
+      el.style.backgroundSize = "500% 200%";
+      el.style.backgroundPosition = `${col * 25}% ${row * 100}%`;
+
+      // סמליל קטן בחלק המרכזי שיוצר פאזל ויזואלי אמיתי
+      if (pieceIdx === 2 || pieceIdx === 7) {
+        el.innerHTML = `<span class="opacity-70 text-lg">${theme.emoji}</span>`;
+      }
+
+      el.onclick = () => handlePieceSelect(pieceIdx, el);
+      return el;
+    }
+
+    /* בחירת חלק מהמגש */
+    function handlePieceSelect(pieceIdx, el) {
+      // ביטול בחירה קודמת
+      document.querySelectorAll('#puzzle-pieces-pool div, #puzzle-board div').forEach(p => {
+        p.classList.remove('ring-4', 'ring-amber-400', 'scale-105');
+      });
+
+      if (selectedPieceId === pieceIdx) {
+        selectedPieceId = null;
+        return;
+      }
+
+      selectedPieceId = pieceIdx;
+      el.classList.add('ring-4', 'ring-amber-400', 'scale-105');
+      playTone(440, 'sine', 0.08);
+    }
+
+    /* הנחת חלק במשבצת היעד */
+    function handleSlotClick(slotIdx, slotEl) {
+      if (selectedPieceId === null) return;
+
+      const correctSlotForPiece = selectedPieceId;
+
+      if (slotIdx === correctSlotForPiece) {
+        // מיקום נכון!
+        playSoundSuccess();
+        placedPieces[selectedPieceId] = slotIdx;
+
+        const pieceEl = document.getElementById(`piece-${selectedPieceId}`);
+        if (pieceEl) pieceEl.remove();
+
+        const theme = PUZZLE_THEMES[currentCategory.puzzleTheme] || PUZZLE_THEMES.space;
+        const col = selectedPieceId % 5;
+        const row = Math.floor(selectedPieceId / 5);
+
+        slotEl.style.background = theme.gradient;
+        slotEl.style.backgroundSize = "500% 200%";
+        slotEl.style.backgroundPosition = `${col * 25}% ${row * 100}%`;
+        slotEl.classList.remove('border-dashed', 'border-slate-300', 'hover:border-indigo-400');
+        slotEl.classList.add('border-solid', 'border-white', 'shadow-inner');
+        
+        if (selectedPieceId === 2 || selectedPieceId === 7) {
+          slotEl.innerHTML = `<span class="opacity-80 text-xl">${theme.emoji}</span>`;
+        }
+
+        selectedPieceId = null;
+
+        // בדיקה האם כל 10 החלקים הורכבו בהצלחה
+        if (Object.keys(placedPieces).length === 10) {
+          setTimeout(triggerVictory, 600);
+        }
+
+      } else {
+        // מיקום שגוי בלוח
+        playSoundError();
+        slotEl.classList.add('bg-rose-100');
+        setTimeout(() => slotEl.classList.remove('bg-rose-100'), 500);
+      }
+    }
+
+    /* ========================================================
+       6. חגיגת ניצחון וזיקוקי דינור
+       ======================================================== */
+    function triggerVictory() {
+      showScreen('victory');
+      playVictoryMelody();
+
+      // הצגת התמונה המלאה
+      const theme = PUZZLE_THEMES[currentCategory.puzzleTheme] || PUZZLE_THEMES.space;
+      const display = document.getElementById('victory-puzzle-display');
+      display.style.background = theme.gradient;
+      display.innerHTML = `
+        <div class="w-full h-full flex flex-col items-center justify-center text-white drop-shadow-md">
+          <span class="text-6xl mb-2">${theme.emoji}</span>
+          <span class="text-xl font-black">${theme.name}</span>
+        </div>
+      `;
+
+      // הפעלת זיקוקי דינור רצופים (Canvas Confetti)
+      const duration = 4.5 * 1000;
+      const end = Date.now() + duration;
+
+      (function frame() {
+        confetti({
+          particleCount: 5,
+          angle: 60,
+          spread: 55,
+          origin: { x: 0, y: 0.7 }
+        });
+        confetti({
+          particleCount: 5,
+          angle: 120,
+          spread: 55,
+          origin: { x: 1, y: 0.7 }
+        });
+
+        if (Date.now() < end) {
+          requestAnimationFrame(frame);
+        }
+      }());
+    }
+
+    /* ========================================================
+       7. ניהול מחברת טיוטה וציור (Drawing Canvas)
+       ======================================================== */
+    const notebookModal = document.getElementById('notebook-modal');
+    const canvas = document.getElementById('notebook-canvas');
+    const ctx = canvas.getContext('2d');
+    let isDrawing = false;
+    let currentColor = '#0f172a';
+    let currentSize = 4;
+
+    function resizeCanvas() {
+      const rect = canvas.getBoundingClientRect();
+      // שמירת תוכן קיים
+      const tempImg = ctx.getImageData(0, 0, canvas.width, canvas.height);
+      canvas.width = rect.width;
+      canvas.height = rect.height;
+      try {
+        ctx.putImageData(tempImg, 0, 0);
+      } catch(e) {}
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+    }
+
+    window.addEventListener('resize', ()
