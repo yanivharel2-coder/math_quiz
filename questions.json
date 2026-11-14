@@ -1,0 +1,4210 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "grade": "כיתה ג - משרד החינוך",
+    "totalQuestions": 300,
+    "perCategory": 50
+  },
+  "questions": [
+    {
+      "id": "dec_01",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "מהו המספר העוקב של המספר 509?",
+      "options": [
+        "510",
+        "508",
+        "590",
+        "600"
+      ],
+      "ans": "510",
+      "visual": ""
+    },
+    {
+      "id": "dec_02",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "מי מבין המספרים הבאים שווה ערך ל: 7 יחידות ועוד 30 עשרות?",
+      "options": [
+        "307",
+        "370",
+        "730",
+        "37"
+      ],
+      "ans": "307",
+      "visual": ""
+    },
+    {
+      "id": "dec_03",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר בסדרה: 61, 64, 67, __, 73, 76",
+      "options": [
+        "70",
+        "69",
+        "71",
+        "68"
+      ],
+      "ans": "70",
+      "visual": ""
+    },
+    {
+      "id": "dec_04",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "איך כותבים במילים את המספר 509?",
+      "options": [
+        "חמש מאות ותשע",
+        "חמש מאות ותשעים",
+        "חמישים ותשע",
+        "חמשת אלפים ותשע"
+      ],
+      "ans": "חמש מאות ותשע",
+      "visual": ""
+    },
+    {
+      "id": "dec_05",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "מהו המספר הקודם למספר 80?",
+      "options": [
+        "79",
+        "81",
+        "70",
+        "69"
+      ],
+      "ans": "79",
+      "visual": ""
+    },
+    {
+      "id": "dec_06",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "מהספרות 2, 5, ו-7 בנו מספר דו-ספרתי שהספרה 7 היא ספרת העשרות שלו:",
+      "options": [
+        "72",
+        "27",
+        "57",
+        "25"
+      ],
+      "ans": "72",
+      "visual": ""
+    },
+    {
+      "id": "dec_07",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "מהספרות 2, 5, ו-7 בנו מספר דו-ספרתי שהספרה 2 היא ספרת העשרות שלו:",
+      "options": [
+        "27",
+        "72",
+        "52",
+        "75"
+      ],
+      "ans": "27",
+      "visual": ""
+    },
+    {
+      "id": "dec_08",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "איזה מספר נמצא בדיוק באמצע ישר המספרים בין 0 ל-100?",
+      "options": [
+        "50",
+        "40",
+        "60",
+        "55"
+      ],
+      "ans": "50",
+      "visual": ""
+    },
+    {
+      "id": "dec_09",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "מהו המספר העוקב של המספר 999?",
+      "options": [
+        "1,000",
+        "998",
+        "990",
+        "1,001"
+      ],
+      "ans": "1,000",
+      "visual": ""
+    },
+    {
+      "id": "dec_10",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "מהו המספר הקודם למספר 1,000?",
+      "options": [
+        "999",
+        "990",
+        "900",
+        "1,001"
+      ],
+      "ans": "999",
+      "visual": ""
+    },
+    {
+      "id": "dec_11",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "מהו המספר העוקב של המספר 2,409?",
+      "options": [
+        "2,410",
+        "2,408",
+        "2,500",
+        "2,419"
+      ],
+      "ans": "2,410",
+      "visual": ""
+    },
+    {
+      "id": "dec_12",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "מהו המספר הקודם למספר 3,500?",
+      "options": [
+        "3,499",
+        "3,490",
+        "3,501",
+        "3,400"
+      ],
+      "ans": "3,499",
+      "visual": ""
+    },
+    {
+      "id": "dec_13",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "מה ערך הספרה 6 במספר 4,625?",
+      "options": [
+        "600",
+        "6",
+        "60",
+        "6,000"
+      ],
+      "ans": "600",
+      "visual": ""
+    },
+    {
+      "id": "dec_14",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "מה ערך הספרה 8 במספר 8,192?",
+      "options": [
+        "8,000",
+        "800",
+        "80",
+        "8"
+      ],
+      "ans": "8,000",
+      "visual": ""
+    },
+    {
+      "id": "dec_15",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "איזה מספר מורכב מ: 3 אלפים, 4 מאות, 0 עשרות ו-5 יחידות?",
+      "options": [
+        "3,405",
+        "3,450",
+        "3,045",
+        "345"
+      ],
+      "ans": "3,405",
+      "visual": ""
+    },
+    {
+      "id": "dec_16",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "איזה מספר מורכב מ: 5 אלפים, 2 עשרות ו-9 יחידות?",
+      "options": [
+        "5,029",
+        "5,209",
+        "5,290",
+        "529"
+      ],
+      "ans": "5,029",
+      "visual": ""
+    },
+    {
+      "id": "dec_17",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "איך כותבים בספרות: אלפיים ושבע מאות ושלושים?",
+      "options": [
+        "2,730",
+        "2,703",
+        "2,073",
+        "273"
+      ],
+      "ans": "2,730",
+      "visual": ""
+    },
+    {
+      "id": "dec_18",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "איך כותבים בספרות: ששת אלפים וארבע עשרה?",
+      "options": [
+        "6,014",
+        "6,140",
+        "6,400",
+        "614"
+      ],
+      "ans": "6,014",
+      "visual": ""
+    },
+    {
+      "id": "dec_19",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "השלימי את הסדרה: 1,200, 1,400, 1,600, ____, 2,000",
+      "options": [
+        "1,800",
+        "1,700",
+        "1,900",
+        "1,650"
+      ],
+      "ans": "1,800",
+      "visual": ""
+    },
+    {
+      "id": "dec_20",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "השלימי את הסדרה: 4,550, 4,560, 4,570, ____, 4,590",
+      "options": [
+        "4,580",
+        "4,575",
+        "4,600",
+        "4,585"
+      ],
+      "ans": "4,580",
+      "visual": ""
+    },
+    {
+      "id": "dec_21",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "מהו המספר העוקב למספר 350?",
+      "options": [
+        "351",
+        "349",
+        "360",
+        "450"
+      ],
+      "ans": "351",
+      "visual": ""
+    },
+    {
+      "id": "dec_22",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "מהו המספר הקודם למספר 1,100?",
+      "options": [
+        "1,099",
+        "1,101",
+        "1,090",
+        "1,000"
+      ],
+      "ans": "1,099",
+      "visual": ""
+    },
+    {
+      "id": "dec_23",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "כמה עשרות שלמות יש בסך הכל במספר 1,210?",
+      "options": [
+        "121",
+        "1",
+        "12",
+        "1210"
+      ],
+      "ans": "121",
+      "visual": ""
+    },
+    {
+      "id": "dec_24",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "מהו המספר העוקב למספר 480?",
+      "options": [
+        "481",
+        "479",
+        "490",
+        "580"
+      ],
+      "ans": "481",
+      "visual": ""
+    },
+    {
+      "id": "dec_25",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "מהו המספר הקודם למספר 310?",
+      "options": [
+        "309",
+        "311",
+        "300",
+        "210"
+      ],
+      "ans": "309",
+      "visual": ""
+    },
+    {
+      "id": "dec_26",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "כמה עשרות שלמות יש בסך הכל במספר 3,940?",
+      "options": [
+        "394",
+        "4",
+        "39",
+        "3940"
+      ],
+      "ans": "394",
+      "visual": ""
+    },
+    {
+      "id": "dec_27",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "מהו המספר העוקב למספר 120?",
+      "options": [
+        "121",
+        "119",
+        "130",
+        "220"
+      ],
+      "ans": "121",
+      "visual": ""
+    },
+    {
+      "id": "dec_28",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "מהו המספר הקודם למספר 310?",
+      "options": [
+        "309",
+        "311",
+        "300",
+        "210"
+      ],
+      "ans": "309",
+      "visual": ""
+    },
+    {
+      "id": "dec_29",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "כמה עשרות שלמות יש בסך הכל במספר 1,080?",
+      "options": [
+        "108",
+        "8",
+        "10",
+        "1080"
+      ],
+      "ans": "108",
+      "visual": ""
+    },
+    {
+      "id": "dec_30",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "מהו המספר העוקב למספר 480?",
+      "options": [
+        "481",
+        "479",
+        "490",
+        "580"
+      ],
+      "ans": "481",
+      "visual": ""
+    },
+    {
+      "id": "dec_31",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "מהו המספר הקודם למספר 9,000?",
+      "options": [
+        "8,999",
+        "9,001",
+        "8,990",
+        "8,900"
+      ],
+      "ans": "8,999",
+      "visual": ""
+    },
+    {
+      "id": "dec_32",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "כמה עשרות שלמות יש בסך הכל במספר 1,370?",
+      "options": [
+        "137",
+        "7",
+        "13",
+        "1370"
+      ],
+      "ans": "137",
+      "visual": ""
+    },
+    {
+      "id": "dec_33",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "מהו המספר העוקב למספר 240?",
+      "options": [
+        "241",
+        "239",
+        "250",
+        "340"
+      ],
+      "ans": "241",
+      "visual": ""
+    },
+    {
+      "id": "dec_34",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "מהו המספר הקודם למספר 200?",
+      "options": [
+        "199",
+        "201",
+        "190",
+        "100"
+      ],
+      "ans": "199",
+      "visual": ""
+    },
+    {
+      "id": "dec_35",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "כמה עשרות שלמות יש בסך הכל במספר 1,350?",
+      "options": [
+        "135",
+        "5",
+        "13",
+        "1350"
+      ],
+      "ans": "135",
+      "visual": ""
+    },
+    {
+      "id": "dec_36",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "מהו המספר העוקב למספר 610?",
+      "options": [
+        "611",
+        "609",
+        "620",
+        "710"
+      ],
+      "ans": "611",
+      "visual": ""
+    },
+    {
+      "id": "dec_37",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "מהו המספר הקודם למספר 200?",
+      "options": [
+        "199",
+        "201",
+        "190",
+        "100"
+      ],
+      "ans": "199",
+      "visual": ""
+    },
+    {
+      "id": "dec_38",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "כמה עשרות שלמות יש בסך הכל במספר 9,490?",
+      "options": [
+        "949",
+        "9",
+        "94",
+        "9490"
+      ],
+      "ans": "949",
+      "visual": ""
+    },
+    {
+      "id": "dec_39",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "מהו המספר העוקב למספר 5,670?",
+      "options": [
+        "5,671",
+        "5,669",
+        "5,680",
+        "5,770"
+      ],
+      "ans": "5,671",
+      "visual": ""
+    },
+    {
+      "id": "dec_40",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "מהו המספר הקודם למספר 1,100?",
+      "options": [
+        "1,099",
+        "1,101",
+        "1,090",
+        "1,000"
+      ],
+      "ans": "1,099",
+      "visual": ""
+    },
+    {
+      "id": "dec_41",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "כמה עשרות שלמות יש בסך הכל במספר 1,030?",
+      "options": [
+        "103",
+        "3",
+        "10",
+        "1030"
+      ],
+      "ans": "103",
+      "visual": ""
+    },
+    {
+      "id": "dec_42",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "מהו המספר העוקב למספר 1,050?",
+      "options": [
+        "1,051",
+        "1,049",
+        "1,060",
+        "1,150"
+      ],
+      "ans": "1,051",
+      "visual": ""
+    },
+    {
+      "id": "dec_43",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "מהו המספר הקודם למספר 450?",
+      "options": [
+        "449",
+        "451",
+        "440",
+        "350"
+      ],
+      "ans": "449",
+      "visual": ""
+    },
+    {
+      "id": "dec_44",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "כמה עשרות שלמות יש בסך הכל במספר 4,060?",
+      "options": [
+        "406",
+        "6",
+        "40",
+        "4060"
+      ],
+      "ans": "406",
+      "visual": ""
+    },
+    {
+      "id": "dec_45",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "מהו המספר העוקב למספר 1,050?",
+      "options": [
+        "1,051",
+        "1,049",
+        "1,060",
+        "1,150"
+      ],
+      "ans": "1,051",
+      "visual": ""
+    },
+    {
+      "id": "dec_46",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "מהו המספר הקודם למספר 6,700?",
+      "options": [
+        "6,699",
+        "6,701",
+        "6,690",
+        "6,600"
+      ],
+      "ans": "6,699",
+      "visual": ""
+    },
+    {
+      "id": "dec_47",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "כמה עשרות שלמות יש בסך הכל במספר 1,030?",
+      "options": [
+        "103",
+        "3",
+        "10",
+        "1030"
+      ],
+      "ans": "103",
+      "visual": ""
+    },
+    {
+      "id": "dec_48",
+      "category": "decimal",
+      "difficulty": "easy",
+      "q": "מהו המספר העוקב למספר 4,120?",
+      "options": [
+        "4,121",
+        "4,119",
+        "4,130",
+        "4,220"
+      ],
+      "ans": "4,121",
+      "visual": ""
+    },
+    {
+      "id": "dec_49",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "מהו המספר הקודם למספר 200?",
+      "options": [
+        "199",
+        "201",
+        "190",
+        "100"
+      ],
+      "ans": "199",
+      "visual": ""
+    },
+    {
+      "id": "dec_50",
+      "category": "decimal",
+      "difficulty": "medium",
+      "q": "כמה עשרות שלמות יש בסך הכל במספר 3,280?",
+      "options": [
+        "328",
+        "8",
+        "32",
+        "3280"
+      ],
+      "ans": "328",
+      "visual": ""
+    },
+    {
+      "id": "ord_01",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">90 - 3 × 4 = ?</span>",
+      "options": [
+        "78",
+        "81",
+        "83",
+        "88"
+      ],
+      "ans": "78",
+      "visual": ""
+    },
+    {
+      "id": "ord_02",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">(33 + 23) : 8 = ?</span>",
+      "options": [
+        "7",
+        "56",
+        "10",
+        "12"
+      ],
+      "ans": "7",
+      "visual": ""
+    },
+    {
+      "id": "ord_03",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">5 × 9 - 38 = ?</span>",
+      "options": [
+        "7",
+        "83",
+        "11",
+        "5"
+      ],
+      "ans": "7",
+      "visual": ""
+    },
+    {
+      "id": "ord_04",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">78 + 28 : 4 = ?</span>",
+      "options": [
+        "85",
+        "91",
+        "87",
+        "81"
+      ],
+      "ans": "85",
+      "visual": ""
+    },
+    {
+      "id": "ord_05",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">37 + 7 × 2 = ?</span>",
+      "options": [
+        "51",
+        "88",
+        "56",
+        "48"
+      ],
+      "ans": "51",
+      "visual": ""
+    },
+    {
+      "id": "ord_06",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">19 - 4 × 2 = ?</span>",
+      "options": [
+        "11",
+        "15",
+        "13",
+        "21"
+      ],
+      "ans": "11",
+      "visual": ""
+    },
+    {
+      "id": "ord_07",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">(3 + 15) : 9 = ?</span>",
+      "options": [
+        "2",
+        "18",
+        "5",
+        "7"
+      ],
+      "ans": "2",
+      "visual": ""
+    },
+    {
+      "id": "ord_08",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">5 × 8 - 5 = ?</span>",
+      "options": [
+        "35",
+        "45",
+        "39",
+        "33"
+      ],
+      "ans": "35",
+      "visual": ""
+    },
+    {
+      "id": "ord_09",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">21 + 81 : 9 = ?</span>",
+      "options": [
+        "30",
+        "36",
+        "32",
+        "26"
+      ],
+      "ans": "30",
+      "visual": ""
+    },
+    {
+      "id": "ord_10",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">71 + 8 × 2 = ?</span>",
+      "options": [
+        "87",
+        "97",
+        "92",
+        "84"
+      ],
+      "ans": "87",
+      "visual": ""
+    },
+    {
+      "id": "ord_11",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">83 - 6 × 8 = ?</span>",
+      "options": [
+        "35",
+        "41",
+        "69",
+        "45"
+      ],
+      "ans": "35",
+      "visual": ""
+    },
+    {
+      "id": "ord_12",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">(6 + 12) : 3 = ?</span>",
+      "options": [
+        "6",
+        "18",
+        "9",
+        "11"
+      ],
+      "ans": "6",
+      "visual": ""
+    },
+    {
+      "id": "ord_13",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">4 × 3 - 8 = ?</span>",
+      "options": [
+        "4",
+        "20",
+        "8",
+        "2"
+      ],
+      "ans": "4",
+      "visual": ""
+    },
+    {
+      "id": "ord_14",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">75 + 8 : 4 = ?</span>",
+      "options": [
+        "77",
+        "83",
+        "79",
+        "73"
+      ],
+      "ans": "77",
+      "visual": ""
+    },
+    {
+      "id": "ord_15",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">38 + 8 × 5 = ?</span>",
+      "options": [
+        "78",
+        "88",
+        "83",
+        "75"
+      ],
+      "ans": "78",
+      "visual": ""
+    },
+    {
+      "id": "ord_16",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">71 - 8 × 8 = ?</span>",
+      "options": [
+        "7",
+        "15",
+        "55",
+        "17"
+      ],
+      "ans": "7",
+      "visual": ""
+    },
+    {
+      "id": "ord_17",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">(17 + 19) : 9 = ?</span>",
+      "options": [
+        "4",
+        "36",
+        "7",
+        "9"
+      ],
+      "ans": "4",
+      "visual": ""
+    },
+    {
+      "id": "ord_18",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">8 × 5 - 34 = ?</span>",
+      "options": [
+        "6",
+        "74",
+        "10",
+        "4"
+      ],
+      "ans": "6",
+      "visual": ""
+    },
+    {
+      "id": "ord_19",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">66 + 24 : 6 = ?</span>",
+      "options": [
+        "70",
+        "15",
+        "72",
+        "66"
+      ],
+      "ans": "70",
+      "visual": ""
+    },
+    {
+      "id": "ord_20",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">33 + 8 × 8 = ?</span>",
+      "options": [
+        "97",
+        "107",
+        "102",
+        "94"
+      ],
+      "ans": "97",
+      "visual": ""
+    },
+    {
+      "id": "ord_21",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">60 - 7 × 3 = ?</span>",
+      "options": [
+        "39",
+        "46",
+        "50",
+        "49"
+      ],
+      "ans": "39",
+      "visual": ""
+    },
+    {
+      "id": "ord_22",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">(25 + 5) : 3 = ?</span>",
+      "options": [
+        "10",
+        "30",
+        "13",
+        "15"
+      ],
+      "ans": "10",
+      "visual": ""
+    },
+    {
+      "id": "ord_23",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">8 × 9 - 44 = ?</span>",
+      "options": [
+        "28",
+        "116",
+        "32",
+        "26"
+      ],
+      "ans": "28",
+      "visual": ""
+    },
+    {
+      "id": "ord_24",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">59 + 21 : 3 = ?</span>",
+      "options": [
+        "66",
+        "72",
+        "68",
+        "62"
+      ],
+      "ans": "66",
+      "visual": ""
+    },
+    {
+      "id": "ord_25",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">41 + 7 × 6 = ?</span>",
+      "options": [
+        "83",
+        "93",
+        "88",
+        "80"
+      ],
+      "ans": "83",
+      "visual": ""
+    },
+    {
+      "id": "ord_26",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">95 - 3 × 8 = ?</span>",
+      "options": [
+        "71",
+        "74",
+        "84",
+        "81"
+      ],
+      "ans": "71",
+      "visual": ""
+    },
+    {
+      "id": "ord_27",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">(28 + 14) : 7 = ?</span>",
+      "options": [
+        "6",
+        "42",
+        "9",
+        "11"
+      ],
+      "ans": "6",
+      "visual": ""
+    },
+    {
+      "id": "ord_28",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">9 × 9 - 49 = ?</span>",
+      "options": [
+        "32",
+        "130",
+        "36",
+        "30"
+      ],
+      "ans": "32",
+      "visual": ""
+    },
+    {
+      "id": "ord_29",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">43 + 18 : 9 = ?</span>",
+      "options": [
+        "45",
+        "51",
+        "47",
+        "41"
+      ],
+      "ans": "45",
+      "visual": ""
+    },
+    {
+      "id": "ord_30",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">62 + 3 × 7 = ?</span>",
+      "options": [
+        "83",
+        "93",
+        "88",
+        "80"
+      ],
+      "ans": "83",
+      "visual": ""
+    },
+    {
+      "id": "ord_31",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">67 - 6 × 8 = ?</span>",
+      "options": [
+        "19",
+        "25",
+        "53",
+        "29"
+      ],
+      "ans": "19",
+      "visual": ""
+    },
+    {
+      "id": "ord_32",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">(4 + 59) : 9 = ?</span>",
+      "options": [
+        "7",
+        "63",
+        "10",
+        "12"
+      ],
+      "ans": "7",
+      "visual": ""
+    },
+    {
+      "id": "ord_33",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">6 × 5 - 20 = ?</span>",
+      "options": [
+        "10",
+        "50",
+        "14",
+        "8"
+      ],
+      "ans": "10",
+      "visual": ""
+    },
+    {
+      "id": "ord_34",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">13 + 48 : 6 = ?</span>",
+      "options": [
+        "21",
+        "27",
+        "23",
+        "17"
+      ],
+      "ans": "21",
+      "visual": ""
+    },
+    {
+      "id": "ord_35",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">55 + 5 × 3 = ?</span>",
+      "options": [
+        "70",
+        "80",
+        "75",
+        "67"
+      ],
+      "ans": "70",
+      "visual": ""
+    },
+    {
+      "id": "ord_36",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">31 - 4 × 7 = ?</span>",
+      "options": [
+        "3",
+        "7",
+        "20",
+        "13"
+      ],
+      "ans": "3",
+      "visual": ""
+    },
+    {
+      "id": "ord_37",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">(12 + 30) : 7 = ?</span>",
+      "options": [
+        "6",
+        "42",
+        "9",
+        "11"
+      ],
+      "ans": "6",
+      "visual": ""
+    },
+    {
+      "id": "ord_38",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">10 × 7 - 47 = ?</span>",
+      "options": [
+        "23",
+        "117",
+        "27",
+        "21"
+      ],
+      "ans": "23",
+      "visual": ""
+    },
+    {
+      "id": "ord_39",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">83 + 16 : 2 = ?</span>",
+      "options": [
+        "91",
+        "97",
+        "93",
+        "87"
+      ],
+      "ans": "91",
+      "visual": ""
+    },
+    {
+      "id": "ord_40",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">67 + 3 × 6 = ?</span>",
+      "options": [
+        "85",
+        "95",
+        "90",
+        "82"
+      ],
+      "ans": "85",
+      "visual": ""
+    },
+    {
+      "id": "ord_41",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">78 - 4 × 7 = ?</span>",
+      "options": [
+        "50",
+        "54",
+        "67",
+        "60"
+      ],
+      "ans": "50",
+      "visual": ""
+    },
+    {
+      "id": "ord_42",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">(2 + 10) : 4 = ?</span>",
+      "options": [
+        "3",
+        "12",
+        "6",
+        "8"
+      ],
+      "ans": "3",
+      "visual": ""
+    },
+    {
+      "id": "ord_43",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">9 × 4 - 17 = ?</span>",
+      "options": [
+        "19",
+        "53",
+        "23",
+        "17"
+      ],
+      "ans": "19",
+      "visual": ""
+    },
+    {
+      "id": "ord_44",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">45 + 16 : 4 = ?</span>",
+      "options": [
+        "49",
+        "55",
+        "51",
+        "45"
+      ],
+      "ans": "49",
+      "visual": ""
+    },
+    {
+      "id": "ord_45",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">37 + 7 × 8 = ?</span>",
+      "options": [
+        "93",
+        "103",
+        "98",
+        "90"
+      ],
+      "ans": "93",
+      "visual": ""
+    },
+    {
+      "id": "ord_46",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">90 - 4 × 5 = ?</span>",
+      "options": [
+        "70",
+        "74",
+        "81",
+        "80"
+      ],
+      "ans": "70",
+      "visual": ""
+    },
+    {
+      "id": "ord_47",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">(9 + 31) : 5 = ?</span>",
+      "options": [
+        "8",
+        "40",
+        "11",
+        "13"
+      ],
+      "ans": "8",
+      "visual": ""
+    },
+    {
+      "id": "ord_48",
+      "category": "order",
+      "difficulty": "medium",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">4 × 3 - 3 = ?</span>",
+      "options": [
+        "9",
+        "15",
+        "13",
+        "7"
+      ],
+      "ans": "9",
+      "visual": ""
+    },
+    {
+      "id": "ord_49",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">9 + 35 : 7 = ?</span>",
+      "options": [
+        "14",
+        "20",
+        "16",
+        "10"
+      ],
+      "ans": "14",
+      "visual": ""
+    },
+    {
+      "id": "ord_50",
+      "category": "order",
+      "difficulty": "easy",
+      "q": "חשבי לפי סדר פעולות חשבון: <span class=\"math-exp\">22 + 5 × 4 = ?</span>",
+      "options": [
+        "42",
+        "52",
+        "47",
+        "39"
+      ],
+      "ans": "42",
+      "visual": ""
+    },
+    {
+      "id": "unk_01",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">36 + ___ = 56</span>",
+      "options": [
+        "20",
+        "22",
+        "16",
+        "30"
+      ],
+      "ans": "20",
+      "visual": ""
+    },
+    {
+      "id": "unk_02",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">70 - ___ = 32</span>",
+      "options": [
+        "38",
+        "42",
+        "32",
+        "48"
+      ],
+      "ans": "38",
+      "visual": ""
+    },
+    {
+      "id": "unk_03",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ × 4 = 24</span>",
+      "options": [
+        "6",
+        "8",
+        "5",
+        "7"
+      ],
+      "ans": "6",
+      "visual": ""
+    },
+    {
+      "id": "unk_04",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">83 - ___ = 47</span>",
+      "options": [
+        "36",
+        "46",
+        "34",
+        "44"
+      ],
+      "ans": "36",
+      "visual": ""
+    },
+    {
+      "id": "unk_05",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ - 29 = 68</span>",
+      "options": [
+        "97",
+        "87",
+        "95",
+        "89"
+      ],
+      "ans": "97",
+      "visual": ""
+    },
+    {
+      "id": "unk_06",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ × 3 = 15</span>",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "57"
+      ],
+      "ans": "5",
+      "visual": ""
+    },
+    {
+      "id": "unk_07",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ : 5 = 2</span>",
+      "options": [
+        "10",
+        "15",
+        "6",
+        "7"
+      ],
+      "ans": "10",
+      "visual": ""
+    },
+    {
+      "id": "unk_08",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">13 + ___ = 86</span>",
+      "options": [
+        "73",
+        "83",
+        "70",
+        "75"
+      ],
+      "ans": "73",
+      "visual": ""
+    },
+    {
+      "id": "unk_09",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">81 - ___ = 18</span>",
+      "options": [
+        "63",
+        "73",
+        "55",
+        "68"
+      ],
+      "ans": "63",
+      "visual": ""
+    },
+    {
+      "id": "unk_10",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ × 5 = 25</span>",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "92"
+      ],
+      "ans": "5",
+      "visual": ""
+    },
+    {
+      "id": "unk_11",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ : 2 = 3</span>",
+      "options": [
+        "6",
+        "8",
+        "5",
+        "37"
+      ],
+      "ans": "6",
+      "visual": ""
+    },
+    {
+      "id": "unk_12",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">34 + ___ = 89</span>",
+      "options": [
+        "55",
+        "65",
+        "52",
+        "57"
+      ],
+      "ans": "55",
+      "visual": ""
+    },
+    {
+      "id": "unk_13",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">77 - ___ = 54</span>",
+      "options": [
+        "23",
+        "33",
+        "15",
+        "28"
+      ],
+      "ans": "23",
+      "visual": ""
+    },
+    {
+      "id": "unk_14",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ × 8 = 56</span>",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "25"
+      ],
+      "ans": "7",
+      "visual": ""
+    },
+    {
+      "id": "unk_15",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ : 9 = 8</span>",
+      "options": [
+        "72",
+        "81",
+        "64",
+        "17"
+      ],
+      "ans": "72",
+      "visual": ""
+    },
+    {
+      "id": "unk_16",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">51 + ___ = 91</span>",
+      "options": [
+        "40",
+        "50",
+        "37",
+        "42"
+      ],
+      "ans": "40",
+      "visual": ""
+    },
+    {
+      "id": "unk_17",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">70 - ___ = 53</span>",
+      "options": [
+        "17",
+        "27",
+        "9",
+        "22"
+      ],
+      "ans": "17",
+      "visual": ""
+    },
+    {
+      "id": "unk_18",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ × 6 = 54</span>",
+      "options": [
+        "9",
+        "10",
+        "11",
+        "49"
+      ],
+      "ans": "9",
+      "visual": ""
+    },
+    {
+      "id": "unk_19",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ : 9 = 5</span>",
+      "options": [
+        "45",
+        "54",
+        "37",
+        "14"
+      ],
+      "ans": "45",
+      "visual": ""
+    },
+    {
+      "id": "unk_20",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">17 + ___ = 50</span>",
+      "options": [
+        "33",
+        "43",
+        "30",
+        "35"
+      ],
+      "ans": "33",
+      "visual": ""
+    },
+    {
+      "id": "unk_21",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">89 - ___ = 39</span>",
+      "options": [
+        "50",
+        "60",
+        "42",
+        "55"
+      ],
+      "ans": "50",
+      "visual": ""
+    },
+    {
+      "id": "unk_22",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ × 9 = 36</span>",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "2"
+      ],
+      "ans": "4",
+      "visual": ""
+    },
+    {
+      "id": "unk_23",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ : 3 = 10</span>",
+      "options": [
+        "30",
+        "33",
+        "28",
+        "13"
+      ],
+      "ans": "30",
+      "visual": ""
+    },
+    {
+      "id": "unk_24",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">62 + ___ = 78</span>",
+      "options": [
+        "16",
+        "26",
+        "13",
+        "18"
+      ],
+      "ans": "16",
+      "visual": ""
+    },
+    {
+      "id": "unk_25",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">94 - ___ = 21</span>",
+      "options": [
+        "73",
+        "83",
+        "65",
+        "78"
+      ],
+      "ans": "73",
+      "visual": ""
+    },
+    {
+      "id": "unk_26",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ × 9 = 90</span>",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "77"
+      ],
+      "ans": "10",
+      "visual": ""
+    },
+    {
+      "id": "unk_27",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ : 5 = 9</span>",
+      "options": [
+        "45",
+        "50",
+        "41",
+        "14"
+      ],
+      "ans": "45",
+      "visual": ""
+    },
+    {
+      "id": "unk_28",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">56 + ___ = 94</span>",
+      "options": [
+        "38",
+        "48",
+        "35",
+        "40"
+      ],
+      "ans": "38",
+      "visual": ""
+    },
+    {
+      "id": "unk_29",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">66 - ___ = 54</span>",
+      "options": [
+        "12",
+        "22",
+        "4",
+        "17"
+      ],
+      "ans": "12",
+      "visual": ""
+    },
+    {
+      "id": "unk_30",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ × 4 = 28</span>",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "89"
+      ],
+      "ans": "7",
+      "visual": ""
+    },
+    {
+      "id": "unk_31",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ : 5 = 6</span>",
+      "options": [
+        "30",
+        "35",
+        "26",
+        "11"
+      ],
+      "ans": "30",
+      "visual": ""
+    },
+    {
+      "id": "unk_32",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">63 + ___ = 73</span>",
+      "options": [
+        "10",
+        "20",
+        "7",
+        "12"
+      ],
+      "ans": "10",
+      "visual": ""
+    },
+    {
+      "id": "unk_33",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">77 - ___ = 49</span>",
+      "options": [
+        "28",
+        "38",
+        "20",
+        "33"
+      ],
+      "ans": "28",
+      "visual": ""
+    },
+    {
+      "id": "unk_34",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ × 7 = 28</span>",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "47"
+      ],
+      "ans": "4",
+      "visual": ""
+    },
+    {
+      "id": "unk_35",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ : 3 = 10</span>",
+      "options": [
+        "30",
+        "33",
+        "28",
+        "13"
+      ],
+      "ans": "30",
+      "visual": ""
+    },
+    {
+      "id": "unk_36",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">53 + ___ = 82</span>",
+      "options": [
+        "29",
+        "39",
+        "26",
+        "31"
+      ],
+      "ans": "29",
+      "visual": ""
+    },
+    {
+      "id": "unk_37",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">83 - ___ = 41</span>",
+      "options": [
+        "42",
+        "52",
+        "34",
+        "47"
+      ],
+      "ans": "42",
+      "visual": ""
+    },
+    {
+      "id": "unk_38",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ × 5 = 45</span>",
+      "options": [
+        "9",
+        "10",
+        "11",
+        "4"
+      ],
+      "ans": "9",
+      "visual": ""
+    },
+    {
+      "id": "unk_39",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ : 9 = 3</span>",
+      "options": [
+        "27",
+        "36",
+        "19",
+        "12"
+      ],
+      "ans": "27",
+      "visual": ""
+    },
+    {
+      "id": "unk_40",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">46 + ___ = 78</span>",
+      "options": [
+        "32",
+        "42",
+        "29",
+        "34"
+      ],
+      "ans": "32",
+      "visual": ""
+    },
+    {
+      "id": "unk_41",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">70 - ___ = 25</span>",
+      "options": [
+        "45",
+        "55",
+        "37",
+        "50"
+      ],
+      "ans": "45",
+      "visual": ""
+    },
+    {
+      "id": "unk_42",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ × 9 = 54</span>",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "77"
+      ],
+      "ans": "6",
+      "visual": ""
+    },
+    {
+      "id": "unk_43",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ : 9 = 9</span>",
+      "options": [
+        "81",
+        "90",
+        "73",
+        "18"
+      ],
+      "ans": "81",
+      "visual": ""
+    },
+    {
+      "id": "unk_44",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">52 + ___ = 73</span>",
+      "options": [
+        "21",
+        "31",
+        "18",
+        "23"
+      ],
+      "ans": "21",
+      "visual": ""
+    },
+    {
+      "id": "unk_45",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">81 - ___ = 23</span>",
+      "options": [
+        "58",
+        "68",
+        "50",
+        "63"
+      ],
+      "ans": "58",
+      "visual": ""
+    },
+    {
+      "id": "unk_46",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ × 5 = 35</span>",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "34"
+      ],
+      "ans": "7",
+      "visual": ""
+    },
+    {
+      "id": "unk_47",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ : 5 = 7</span>",
+      "options": [
+        "35",
+        "40",
+        "31",
+        "12"
+      ],
+      "ans": "35",
+      "visual": ""
+    },
+    {
+      "id": "unk_48",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">19 + ___ = 46</span>",
+      "options": [
+        "27",
+        "37",
+        "24",
+        "29"
+      ],
+      "ans": "27",
+      "visual": ""
+    },
+    {
+      "id": "unk_49",
+      "category": "unknown",
+      "difficulty": "medium",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">96 - ___ = 40</span>",
+      "options": [
+        "56",
+        "66",
+        "48",
+        "61"
+      ],
+      "ans": "56",
+      "visual": ""
+    },
+    {
+      "id": "unk_50",
+      "category": "unknown",
+      "difficulty": "easy",
+      "q": "השלימי את המספר החסר: <span class=\"math-exp\">___ × 9 = 63</span>",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "94"
+      ],
+      "ans": "7",
+      "visual": ""
+    },
+    {
+      "id": "wrd_01",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "רון מסדר כדורים בתוך 4 סלים. בכל סל הוא מניח 7 כדורים.<br>איזה תרגיל מתאר את מספר הכדורים שסידר רון?",
+      "options": [
+        "<span class=\"math-exp\">7 × 4</span>",
+        "<span class=\"math-exp\">7 + 4</span>",
+        "<span class=\"math-exp\">7 - 4</span>",
+        "<span class=\"math-exp\">7 : 4</span>"
+      ],
+      "ans": "<span class=\"math-exp\">7 × 4</span>",
+      "visual": ""
+    },
+    {
+      "id": "wrd_02",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "לרון יש 30 כדורים והוא מסדר 7 כדורים בכל סל (ב-4 סלים סך הכל 28).<br>האם נשארו כדורים שאין להם מקום בסלים, וכמה?",
+      "options": [
+        "כן, נשארו 2 כדורים",
+        "לא, הכל נכנס בדיוק",
+        "כן, נשאר כדור 1",
+        "כן, נשארו 4 כדורים"
+      ],
+      "ans": "כן, נשארו 2 כדורים",
+      "visual": ""
+    },
+    {
+      "id": "wrd_03",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "הדר קנתה כדור במחיר של 27 שקלים. היא שילמה בשטר של 50 שקלים.<br>כמה עודף קיבלה הדר?",
+      "options": [
+        "23 שקלים",
+        "33 שקלים",
+        "27 שקלים",
+        "13 שקלים"
+      ],
+      "ans": "23 שקלים",
+      "visual": ""
+    },
+    {
+      "id": "wrd_04",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "הדר קיבלה עודף של 23 שקלים. איזה שילוב מטבעות נותן בדיוק 23 שקלים?",
+      "options": [
+        "2 מטבעות של 10 ש\"ח ו-3 מטבעות של שקל",
+        "מטבע 1 של 10 ש\"ח ו-2 מטבעות של 5 ש\"ח",
+        "4 מטבעות של 5 ש\"ח",
+        "3 מטבעות של 10 ש\"ח"
+      ],
+      "ans": "2 מטבעות של 10 ש\"ח ו-3 מטבעות של שקל",
+      "visual": ""
+    },
+    {
+      "id": "wrd_05",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "באיור רואים 4 צלחות, ובכל צלחת יש 5 עגבניות.<br>איזה תרגיל כפל מייצג את מספר העגבניות?",
+      "options": [
+        "<span class=\"math-exp\">4 × 5 = 20</span>",
+        "<span class=\"math-exp\">4 + 5 = 9</span>",
+        "<span class=\"math-exp\">5 - 4 = 1</span>",
+        "<span class=\"math-exp\">20 : 5 = 4</span>"
+      ],
+      "ans": "<span class=\"math-exp\">4 × 5 = 20</span>",
+      "visual": "<div class=\"flex gap-2 text-xl justify-center\">🍅🍅🍅🍅🍅 | 🍅🍅🍅🍅🍅 | 🍅🍅🍅🍅🍅 | 🍅🍅🍅🍅🍅</div>"
+    },
+    {
+      "id": "wrd_06",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "יעל קנה/תה משחק שמחירו 83 שקלים ושילם/ה בשטר של 100 שקלים.<br>כמה עודף קיבל/ה?",
+      "options": [
+        "17 שקלים",
+        "27 שקלים",
+        "8 שקלים",
+        "83 שקלים"
+      ],
+      "ans": "17 שקלים",
+      "visual": ""
+    },
+    {
+      "id": "wrd_07",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "לאורי היו 38 בלונים. בבוקר קיבל/ה עוד 20 בלונים, ואחר הצהריים נתן/ה לחבר 9 בלונים.<br>כמה בלונים נשארו לאורי?",
+      "options": [
+        "49",
+        "67",
+        "59",
+        "45"
+      ],
+      "ans": "49",
+      "visual": ""
+    },
+    {
+      "id": "wrd_08",
+      "category": "word",
+      "difficulty": "easy",
+      "q": "שירה סידר/ה 7 קופסאות, ובכל קופסה הניח/ה 7 קוביות.<br>כמה קוביות יש בסך הכל?",
+      "options": [
+        "49",
+        "14",
+        "56",
+        "47"
+      ],
+      "ans": "49",
+      "visual": ""
+    },
+    {
+      "id": "wrd_09",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "ליובל היו 32 כרטיסים. יובל חילק/ה אותם שווה בשווה בין 8 חברים.<br>כמה כרטיסים קיבל כל חבר?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "24"
+      ],
+      "ans": "4",
+      "visual": ""
+    },
+    {
+      "id": "wrd_10",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "נועה קנה/תה משחק שמחירו 26 שקלים ושילם/ה בשטר של 50 שקלים.<br>כמה עודף קיבל/ה?",
+      "options": [
+        "24 שקלים",
+        "34 שקלים",
+        "15 שקלים",
+        "26 שקלים"
+      ],
+      "ans": "24 שקלים",
+      "visual": ""
+    },
+    {
+      "id": "wrd_11",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "לעומר היו 29 גולות. בבוקר קיבל/ה עוד 22 גולות, ואחר הצהריים נתן/ה לחבר 12 גולות.<br>כמה גולות נשארו לעומר?",
+      "options": [
+        "39",
+        "63",
+        "49",
+        "35"
+      ],
+      "ans": "39",
+      "visual": ""
+    },
+    {
+      "id": "wrd_12",
+      "category": "word",
+      "difficulty": "easy",
+      "q": "מאיה סידר/ה 6 קופסאות, ובכל קופסה הניח/ה 6 ספרים.<br>כמה ספרים יש בסך הכל?",
+      "options": [
+        "36",
+        "12",
+        "42",
+        "34"
+      ],
+      "ans": "36",
+      "visual": ""
+    },
+    {
+      "id": "wrd_13",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "לאיתי היו 48 עפרונות. איתי חילק/ה אותם שווה בשווה בין 6 חברים.<br>כמה עפרונות קיבל כל חבר?",
+      "options": [
+        "8",
+        "10",
+        "6",
+        "42"
+      ],
+      "ans": "8",
+      "visual": ""
+    },
+    {
+      "id": "wrd_14",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "תמר קנה/תה משחק שמחירו 17 שקלים ושילם/ה בשטר של 50 שקלים.<br>כמה עודף קיבל/ה?",
+      "options": [
+        "33 שקלים",
+        "43 שקלים",
+        "24 שקלים",
+        "17 שקלים"
+      ],
+      "ans": "33 שקלים",
+      "visual": ""
+    },
+    {
+      "id": "wrd_15",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "לדניאל היו 36 פרחים. בבוקר קיבל/ה עוד 29 פרחים, ואחר הצהריים נתן/ה לחבר 10 פרחים.<br>כמה פרחים נשארו לדניאל?",
+      "options": [
+        "55",
+        "75",
+        "65",
+        "51"
+      ],
+      "ans": "55",
+      "visual": ""
+    },
+    {
+      "id": "wrd_16",
+      "category": "word",
+      "difficulty": "easy",
+      "q": "יעל סידר/ה 3 קופסאות, ובכל קופסה הניח/ה 5 תפוחים.<br>כמה תפוחים יש בסך הכל?",
+      "options": [
+        "15",
+        "8",
+        "20",
+        "13"
+      ],
+      "ans": "15",
+      "visual": ""
+    },
+    {
+      "id": "wrd_17",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "לאורי היו 18 בלונים. אורי חילק/ה אותם שווה בשווה בין 3 חברים.<br>כמה בלונים קיבל כל חבר?",
+      "options": [
+        "6",
+        "8",
+        "3",
+        "15"
+      ],
+      "ans": "6",
+      "visual": ""
+    },
+    {
+      "id": "wrd_18",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "שירה קנה/תה משחק שמחירו 22 שקלים ושילם/ה בשטר של 100 שקלים.<br>כמה עודף קיבל/ה?",
+      "options": [
+        "78 שקלים",
+        "88 שקלים",
+        "69 שקלים",
+        "22 שקלים"
+      ],
+      "ans": "78 שקלים",
+      "visual": ""
+    },
+    {
+      "id": "wrd_19",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "ליובל היו 39 כרטיסים. בבוקר קיבל/ה עוד 21 כרטיסים, ואחר הצהריים נתן/ה לחבר 12 כרטיסים.<br>כמה כרטיסים נשארו ליובל?",
+      "options": [
+        "48",
+        "72",
+        "58",
+        "44"
+      ],
+      "ans": "48",
+      "visual": ""
+    },
+    {
+      "id": "wrd_20",
+      "category": "word",
+      "difficulty": "easy",
+      "q": "נועה סידר/ה 6 קופסאות, ובכל קופסה הניח/ה 9 מדבקות.<br>כמה מדבקות יש בסך הכל?",
+      "options": [
+        "54",
+        "15",
+        "63",
+        "52"
+      ],
+      "ans": "54",
+      "visual": ""
+    },
+    {
+      "id": "wrd_21",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "לעומר היו 72 גולות. עומר חילק/ה אותם שווה בשווה בין 8 חברים.<br>כמה גולות קיבל כל חבר?",
+      "options": [
+        "9",
+        "11",
+        "8",
+        "64"
+      ],
+      "ans": "9",
+      "visual": ""
+    },
+    {
+      "id": "wrd_22",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "מאיה קנה/תה משחק שמחירו 31 שקלים ושילם/ה בשטר של 100 שקלים.<br>כמה עודף קיבל/ה?",
+      "options": [
+        "69 שקלים",
+        "79 שקלים",
+        "60 שקלים",
+        "31 שקלים"
+      ],
+      "ans": "69 שקלים",
+      "visual": ""
+    },
+    {
+      "id": "wrd_23",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "לאיתי היו 35 עפרונות. בבוקר קיבל/ה עוד 14 עפרונות, ואחר הצהריים נתן/ה לחבר 7 עפרונות.<br>כמה עפרונות נשארו לאיתי?",
+      "options": [
+        "42",
+        "56",
+        "52",
+        "38"
+      ],
+      "ans": "42",
+      "visual": ""
+    },
+    {
+      "id": "wrd_24",
+      "category": "word",
+      "difficulty": "easy",
+      "q": "תמר סידר/ה 9 קופסאות, ובכל קופסה הניח/ה 8 צבעים.<br>כמה צבעים יש בסך הכל?",
+      "options": [
+        "72",
+        "17",
+        "80",
+        "70"
+      ],
+      "ans": "72",
+      "visual": ""
+    },
+    {
+      "id": "wrd_25",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "לדניאל היו 20 פרחים. דניאל חילק/ה אותם שווה בשווה בין 4 חברים.<br>כמה פרחים קיבל כל חבר?",
+      "options": [
+        "5",
+        "7",
+        "4",
+        "16"
+      ],
+      "ans": "5",
+      "visual": ""
+    },
+    {
+      "id": "wrd_26",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "יעל קנה/תה משחק שמחירו 52 שקלים ושילם/ה בשטר של 100 שקלים.<br>כמה עודף קיבל/ה?",
+      "options": [
+        "48 שקלים",
+        "58 שקלים",
+        "39 שקלים",
+        "52 שקלים"
+      ],
+      "ans": "48 שקלים",
+      "visual": ""
+    },
+    {
+      "id": "wrd_27",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "לאורי היו 37 בלונים. בבוקר קיבל/ה עוד 17 בלונים, ואחר הצהריים נתן/ה לחבר 5 בלונים.<br>כמה בלונים נשארו לאורי?",
+      "options": [
+        "49",
+        "59",
+        "45",
+        "14"
+      ],
+      "ans": "49",
+      "visual": ""
+    },
+    {
+      "id": "wrd_28",
+      "category": "word",
+      "difficulty": "easy",
+      "q": "שירה סידר/ה 8 קופסאות, ובכל קופסה הניח/ה 8 קוביות.<br>כמה קוביות יש בסך הכל?",
+      "options": [
+        "64",
+        "16",
+        "72",
+        "62"
+      ],
+      "ans": "64",
+      "visual": ""
+    },
+    {
+      "id": "wrd_29",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "ליובל היו 20 כרטיסים. יובל חילק/ה אותם שווה בשווה בין 4 חברים.<br>כמה כרטיסים קיבל כל חבר?",
+      "options": [
+        "5",
+        "7",
+        "4",
+        "16"
+      ],
+      "ans": "5",
+      "visual": ""
+    },
+    {
+      "id": "wrd_30",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "נועה קנה/תה משחק שמחירו 82 שקלים ושילם/ה בשטר של 100 שקלים.<br>כמה עודף קיבל/ה?",
+      "options": [
+        "18 שקלים",
+        "28 שקלים",
+        "9 שקלים",
+        "82 שקלים"
+      ],
+      "ans": "18 שקלים",
+      "visual": ""
+    },
+    {
+      "id": "wrd_31",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "לעומר היו 27 גולות. בבוקר קיבל/ה עוד 22 גולות, ואחר הצהריים נתן/ה לחבר 14 גולות.<br>כמה גולות נשארו לעומר?",
+      "options": [
+        "35",
+        "63",
+        "45",
+        "31"
+      ],
+      "ans": "35",
+      "visual": ""
+    },
+    {
+      "id": "wrd_32",
+      "category": "word",
+      "difficulty": "easy",
+      "q": "מאיה סידר/ה 3 קופסאות, ובכל קופסה הניח/ה 9 ספרים.<br>כמה ספרים יש בסך הכל?",
+      "options": [
+        "27",
+        "12",
+        "36",
+        "25"
+      ],
+      "ans": "27",
+      "visual": ""
+    },
+    {
+      "id": "wrd_33",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "לאיתי היו 35 עפרונות. איתי חילק/ה אותם שווה בשווה בין 7 חברים.<br>כמה עפרונות קיבל כל חבר?",
+      "options": [
+        "5",
+        "7",
+        "28",
+        "86"
+      ],
+      "ans": "5",
+      "visual": ""
+    },
+    {
+      "id": "wrd_34",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "תמר קנה/תה משחק שמחירו 48 שקלים ושילם/ה בשטר של 100 שקלים.<br>כמה עודף קיבל/ה?",
+      "options": [
+        "52 שקלים",
+        "62 שקלים",
+        "43 שקלים",
+        "48 שקלים"
+      ],
+      "ans": "52 שקלים",
+      "visual": ""
+    },
+    {
+      "id": "wrd_35",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "לדניאל היו 31 פרחים. בבוקר קיבל/ה עוד 17 פרחים, ואחר הצהריים נתן/ה לחבר 6 פרחים.<br>כמה פרחים נשארו לדניאל?",
+      "options": [
+        "42",
+        "54",
+        "52",
+        "38"
+      ],
+      "ans": "42",
+      "visual": ""
+    },
+    {
+      "id": "wrd_36",
+      "category": "word",
+      "difficulty": "easy",
+      "q": "יעל סידר/ה 5 קופסאות, ובכל קופסה הניח/ה 9 תפוחים.<br>כמה תפוחים יש בסך הכל?",
+      "options": [
+        "45",
+        "14",
+        "54",
+        "43"
+      ],
+      "ans": "45",
+      "visual": ""
+    },
+    {
+      "id": "wrd_37",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "לאורי היו 36 בלונים. אורי חילק/ה אותם שווה בשווה בין 6 חברים.<br>כמה בלונים קיבל כל חבר?",
+      "options": [
+        "6",
+        "8",
+        "30",
+        "12"
+      ],
+      "ans": "6",
+      "visual": ""
+    },
+    {
+      "id": "wrd_38",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "שירה קנה/תה משחק שמחירו 33 שקלים ושילם/ה בשטר של 50 שקלים.<br>כמה עודף קיבל/ה?",
+      "options": [
+        "17 שקלים",
+        "27 שקלים",
+        "8 שקלים",
+        "33 שקלים"
+      ],
+      "ans": "17 שקלים",
+      "visual": ""
+    },
+    {
+      "id": "wrd_39",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "ליובל היו 33 כרטיסים. בבוקר קיבל/ה עוד 26 כרטיסים, ואחר הצהריים נתן/ה לחבר 16 כרטיסים.<br>כמה כרטיסים נשארו ליובל?",
+      "options": [
+        "43",
+        "75",
+        "53",
+        "39"
+      ],
+      "ans": "43",
+      "visual": ""
+    },
+    {
+      "id": "wrd_40",
+      "category": "word",
+      "difficulty": "easy",
+      "q": "נועה סידר/ה 7 קופסאות, ובכל קופסה הניח/ה 8 מדבקות.<br>כמה מדבקות יש בסך הכל?",
+      "options": [
+        "56",
+        "15",
+        "64",
+        "54"
+      ],
+      "ans": "56",
+      "visual": ""
+    },
+    {
+      "id": "wrd_41",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "לעומר היו 32 גולות. עומר חילק/ה אותם שווה בשווה בין 4 חברים.<br>כמה גולות קיבל כל חבר?",
+      "options": [
+        "8",
+        "10",
+        "4",
+        "28"
+      ],
+      "ans": "8",
+      "visual": ""
+    },
+    {
+      "id": "wrd_42",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "מאיה קנה/תה משחק שמחירו 27 שקלים ושילם/ה בשטר של 100 שקלים.<br>כמה עודף קיבל/ה?",
+      "options": [
+        "73 שקלים",
+        "83 שקלים",
+        "64 שקלים",
+        "27 שקלים"
+      ],
+      "ans": "73 שקלים",
+      "visual": ""
+    },
+    {
+      "id": "wrd_43",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "לאיתי היו 50 עפרונות. בבוקר קיבל/ה עוד 11 עפרונות, ואחר הצהריים נתן/ה לחבר 10 עפרונות.<br>כמה עפרונות נשארו לאיתי?",
+      "options": [
+        "51",
+        "71",
+        "61",
+        "47"
+      ],
+      "ans": "51",
+      "visual": ""
+    },
+    {
+      "id": "wrd_44",
+      "category": "word",
+      "difficulty": "easy",
+      "q": "תמר סידר/ה 7 קופסאות, ובכל קופסה הניח/ה 9 צבעים.<br>כמה צבעים יש בסך הכל?",
+      "options": [
+        "63",
+        "16",
+        "72",
+        "61"
+      ],
+      "ans": "63",
+      "visual": ""
+    },
+    {
+      "id": "wrd_45",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "לדניאל היו 36 פרחים. דניאל חילק/ה אותם שווה בשווה בין 4 חברים.<br>כמה פרחים קיבל כל חבר?",
+      "options": [
+        "9",
+        "11",
+        "4",
+        "32"
+      ],
+      "ans": "9",
+      "visual": ""
+    },
+    {
+      "id": "wrd_46",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "יעל קנה/תה משחק שמחירו 54 שקלים ושילם/ה בשטר של 100 שקלים.<br>כמה עודף קיבל/ה?",
+      "options": [
+        "46 שקלים",
+        "56 שקלים",
+        "37 שקלים",
+        "54 שקלים"
+      ],
+      "ans": "46 שקלים",
+      "visual": ""
+    },
+    {
+      "id": "wrd_47",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "לאורי היו 47 בלונים. בבוקר קיבל/ה עוד 28 בלונים, ואחר הצהריים נתן/ה לחבר 14 בלונים.<br>כמה בלונים נשארו לאורי?",
+      "options": [
+        "61",
+        "89",
+        "71",
+        "57"
+      ],
+      "ans": "61",
+      "visual": ""
+    },
+    {
+      "id": "wrd_48",
+      "category": "word",
+      "difficulty": "easy",
+      "q": "שירה סידר/ה 6 קופסאות, ובכל קופסה הניח/ה 9 קוביות.<br>כמה קוביות יש בסך הכל?",
+      "options": [
+        "54",
+        "15",
+        "63",
+        "52"
+      ],
+      "ans": "54",
+      "visual": ""
+    },
+    {
+      "id": "wrd_49",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "ליובל היו 24 כרטיסים. יובל חילק/ה אותם שווה בשווה בין 3 חברים.<br>כמה כרטיסים קיבל כל חבר?",
+      "options": [
+        "8",
+        "10",
+        "3",
+        "21"
+      ],
+      "ans": "8",
+      "visual": ""
+    },
+    {
+      "id": "wrd_50",
+      "category": "word",
+      "difficulty": "medium",
+      "q": "נועה קנה/תה משחק שמחירו 21 שקלים ושילם/ה בשטר של 50 שקלים.<br>כמה עודף קיבל/ה?",
+      "options": [
+        "29 שקלים",
+        "39 שקלים",
+        "20 שקלים",
+        "21 שקלים"
+      ],
+      "ans": "29 שקלים",
+      "visual": ""
+    },
+    {
+      "id": "ops_01",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">56 + 40 = ?</span>",
+      "options": [
+        "96",
+        "86",
+        "90",
+        "16"
+      ],
+      "ans": "96",
+      "visual": ""
+    },
+    {
+      "id": "ops_02",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">48 - 38 = ?</span>",
+      "options": [
+        "10",
+        "18",
+        "12",
+        "8"
+      ],
+      "ans": "10",
+      "visual": ""
+    },
+    {
+      "id": "ops_03",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">17 + 27 + 23 = ?</span>",
+      "options": [
+        "67",
+        "57",
+        "77",
+        "63"
+      ],
+      "ans": "67",
+      "visual": ""
+    },
+    {
+      "id": "ops_04",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">96 - 78 = ?</span>",
+      "options": [
+        "18",
+        "28",
+        "16",
+        "22"
+      ],
+      "ans": "18",
+      "visual": ""
+    },
+    {
+      "id": "ops_05",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">2 × 4 = ?</span>",
+      "options": [
+        "8",
+        "6",
+        "10",
+        "12"
+      ],
+      "ans": "8",
+      "visual": ""
+    },
+    {
+      "id": "ops_06",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">14 : 2 = ?</span>",
+      "options": [
+        "7",
+        "6",
+        "8",
+        "12"
+      ],
+      "ans": "7",
+      "visual": ""
+    },
+    {
+      "id": "ops_07",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">36 : 4 = ?</span>",
+      "options": [
+        "9",
+        "10",
+        "11",
+        "52"
+      ],
+      "ans": "9",
+      "visual": ""
+    },
+    {
+      "id": "ops_08",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">60 + 18 = ?</span>",
+      "options": [
+        "78",
+        "68",
+        "88",
+        "79"
+      ],
+      "ans": "78",
+      "visual": ""
+    },
+    {
+      "id": "ops_09",
+      "category": "four_ops",
+      "difficulty": "medium",
+      "q": "חשבי: <span class=\"math-exp\">53 - 32 = ?</span>",
+      "options": [
+        "21",
+        "31",
+        "12",
+        "23"
+      ],
+      "ans": "21",
+      "visual": ""
+    },
+    {
+      "id": "ops_10",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">7 × 8 = ?</span>",
+      "options": [
+        "56",
+        "63",
+        "49",
+        "15"
+      ],
+      "ans": "56",
+      "visual": ""
+    },
+    {
+      "id": "ops_11",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">27 : 9 = ?</span>",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "80"
+      ],
+      "ans": "3",
+      "visual": ""
+    },
+    {
+      "id": "ops_12",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">42 + 57 = ?</span>",
+      "options": [
+        "99",
+        "89",
+        "97",
+        "100"
+      ],
+      "ans": "99",
+      "visual": ""
+    },
+    {
+      "id": "ops_13",
+      "category": "four_ops",
+      "difficulty": "medium",
+      "q": "חשבי: <span class=\"math-exp\">67 - 37 = ?</span>",
+      "options": [
+        "30",
+        "40",
+        "21",
+        "32"
+      ],
+      "ans": "30",
+      "visual": ""
+    },
+    {
+      "id": "ops_14",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">3 × 5 = ?</span>",
+      "options": [
+        "15",
+        "18",
+        "11",
+        "8"
+      ],
+      "ans": "15",
+      "visual": ""
+    },
+    {
+      "id": "ops_15",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">20 : 2 = ?</span>",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "77"
+      ],
+      "ans": "10",
+      "visual": ""
+    },
+    {
+      "id": "ops_16",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">57 + 23 = ?</span>",
+      "options": [
+        "80",
+        "70",
+        "90",
+        "81"
+      ],
+      "ans": "80",
+      "visual": ""
+    },
+    {
+      "id": "ops_17",
+      "category": "four_ops",
+      "difficulty": "medium",
+      "q": "חשבי: <span class=\"math-exp\">86 - 18 = ?</span>",
+      "options": [
+        "68",
+        "78",
+        "59",
+        "70"
+      ],
+      "ans": "68",
+      "visual": ""
+    },
+    {
+      "id": "ops_18",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">4 × 5 = ?</span>",
+      "options": [
+        "20",
+        "24",
+        "16",
+        "9"
+      ],
+      "ans": "20",
+      "visual": ""
+    },
+    {
+      "id": "ops_19",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">4 : 2 = ?</span>",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "ans": "2",
+      "visual": ""
+    },
+    {
+      "id": "ops_20",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">37 + 29 = ?</span>",
+      "options": [
+        "66",
+        "56",
+        "76",
+        "67"
+      ],
+      "ans": "66",
+      "visual": ""
+    },
+    {
+      "id": "ops_21",
+      "category": "four_ops",
+      "difficulty": "medium",
+      "q": "חשבי: <span class=\"math-exp\">92 - 19 = ?</span>",
+      "options": [
+        "73",
+        "83",
+        "64",
+        "75"
+      ],
+      "ans": "73",
+      "visual": ""
+    },
+    {
+      "id": "ops_22",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">7 × 4 = ?</span>",
+      "options": [
+        "28",
+        "35",
+        "25",
+        "11"
+      ],
+      "ans": "28",
+      "visual": ""
+    },
+    {
+      "id": "ops_23",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">14 : 7 = ?</span>",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "39"
+      ],
+      "ans": "2",
+      "visual": ""
+    },
+    {
+      "id": "ops_24",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">39 + 45 = ?</span>",
+      "options": [
+        "84",
+        "74",
+        "94",
+        "85"
+      ],
+      "ans": "84",
+      "visual": ""
+    },
+    {
+      "id": "ops_25",
+      "category": "four_ops",
+      "difficulty": "medium",
+      "q": "חשבי: <span class=\"math-exp\">98 - 24 = ?</span>",
+      "options": [
+        "74",
+        "84",
+        "65",
+        "76"
+      ],
+      "ans": "74",
+      "visual": ""
+    },
+    {
+      "id": "ops_26",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">10 × 4 = ?</span>",
+      "options": [
+        "40",
+        "50",
+        "37",
+        "14"
+      ],
+      "ans": "40",
+      "visual": ""
+    },
+    {
+      "id": "ops_27",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">30 : 3 = ?</span>",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "16"
+      ],
+      "ans": "10",
+      "visual": ""
+    },
+    {
+      "id": "ops_28",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">55 + 43 = ?</span>",
+      "options": [
+        "98",
+        "88",
+        "96",
+        "99"
+      ],
+      "ans": "98",
+      "visual": ""
+    },
+    {
+      "id": "ops_29",
+      "category": "four_ops",
+      "difficulty": "medium",
+      "q": "חשבי: <span class=\"math-exp\">69 - 41 = ?</span>",
+      "options": [
+        "28",
+        "38",
+        "19",
+        "30"
+      ],
+      "ans": "28",
+      "visual": ""
+    },
+    {
+      "id": "ops_30",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">5 × 5 = ?</span>",
+      "options": [
+        "25",
+        "30",
+        "21",
+        "10"
+      ],
+      "ans": "25",
+      "visual": ""
+    },
+    {
+      "id": "ops_31",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">60 : 6 = ?</span>",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "4"
+      ],
+      "ans": "10",
+      "visual": ""
+    },
+    {
+      "id": "ops_32",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">42 + 26 = ?</span>",
+      "options": [
+        "68",
+        "58",
+        "78",
+        "69"
+      ],
+      "ans": "68",
+      "visual": ""
+    },
+    {
+      "id": "ops_33",
+      "category": "four_ops",
+      "difficulty": "medium",
+      "q": "חשבי: <span class=\"math-exp\">92 - 33 = ?</span>",
+      "options": [
+        "59",
+        "69",
+        "50",
+        "61"
+      ],
+      "ans": "59",
+      "visual": ""
+    },
+    {
+      "id": "ops_34",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">3 × 8 = ?</span>",
+      "options": [
+        "24",
+        "27",
+        "17",
+        "11"
+      ],
+      "ans": "24",
+      "visual": ""
+    },
+    {
+      "id": "ops_35",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">12 : 3 = ?</span>",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "1"
+      ],
+      "ans": "4",
+      "visual": ""
+    },
+    {
+      "id": "ops_36",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">59 + 39 = ?</span>",
+      "options": [
+        "98",
+        "88",
+        "96",
+        "99"
+      ],
+      "ans": "98",
+      "visual": ""
+    },
+    {
+      "id": "ops_37",
+      "category": "four_ops",
+      "difficulty": "medium",
+      "q": "חשבי: <span class=\"math-exp\">76 - 44 = ?</span>",
+      "options": [
+        "32",
+        "42",
+        "23",
+        "34"
+      ],
+      "ans": "32",
+      "visual": ""
+    },
+    {
+      "id": "ops_38",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">4 × 7 = ?</span>",
+      "options": [
+        "28",
+        "32",
+        "22",
+        "11"
+      ],
+      "ans": "28",
+      "visual": ""
+    },
+    {
+      "id": "ops_39",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">49 : 7 = ?</span>",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "80"
+      ],
+      "ans": "7",
+      "visual": ""
+    },
+    {
+      "id": "ops_40",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">45 + 42 = ?</span>",
+      "options": [
+        "87",
+        "77",
+        "97",
+        "88"
+      ],
+      "ans": "87",
+      "visual": ""
+    },
+    {
+      "id": "ops_41",
+      "category": "four_ops",
+      "difficulty": "medium",
+      "q": "חשבי: <span class=\"math-exp\">68 - 53 = ?</span>",
+      "options": [
+        "15",
+        "25",
+        "6",
+        "17"
+      ],
+      "ans": "15",
+      "visual": ""
+    },
+    {
+      "id": "ops_42",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">4 × 7 = ?</span>",
+      "options": [
+        "28",
+        "32",
+        "22",
+        "11"
+      ],
+      "ans": "28",
+      "visual": ""
+    },
+    {
+      "id": "ops_43",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">16 : 4 = ?</span>",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "9"
+      ],
+      "ans": "4",
+      "visual": ""
+    },
+    {
+      "id": "ops_44",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">22 + 68 = ?</span>",
+      "options": [
+        "90",
+        "80",
+        "100",
+        "91"
+      ],
+      "ans": "90",
+      "visual": ""
+    },
+    {
+      "id": "ops_45",
+      "category": "four_ops",
+      "difficulty": "medium",
+      "q": "חשבי: <span class=\"math-exp\">63 - 15 = ?</span>",
+      "options": [
+        "48",
+        "58",
+        "39",
+        "50"
+      ],
+      "ans": "48",
+      "visual": ""
+    },
+    {
+      "id": "ops_46",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">9 × 9 = ?</span>",
+      "options": [
+        "81",
+        "90",
+        "73",
+        "18"
+      ],
+      "ans": "81",
+      "visual": ""
+    },
+    {
+      "id": "ops_47",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">16 : 2 = ?</span>",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "58"
+      ],
+      "ans": "8",
+      "visual": ""
+    },
+    {
+      "id": "ops_48",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">48 + 35 = ?</span>",
+      "options": [
+        "83",
+        "73",
+        "93",
+        "84"
+      ],
+      "ans": "83",
+      "visual": ""
+    },
+    {
+      "id": "ops_49",
+      "category": "four_ops",
+      "difficulty": "medium",
+      "q": "חשבי: <span class=\"math-exp\">52 - 31 = ?</span>",
+      "options": [
+        "21",
+        "31",
+        "12",
+        "23"
+      ],
+      "ans": "21",
+      "visual": ""
+    },
+    {
+      "id": "ops_50",
+      "category": "four_ops",
+      "difficulty": "easy",
+      "q": "חשבי: <span class=\"math-exp\">6 × 4 = ?</span>",
+      "options": [
+        "24",
+        "30",
+        "21",
+        "10"
+      ],
+      "ans": "24",
+      "visual": ""
+    },
+    {
+      "id": "len_01",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "כמה סנטימטרים יש ב-1 מטר?",
+      "options": [
+        "100 ס\"מ",
+        "10 ס\"מ",
+        "1,000 ס\"מ",
+        "50 ס\"מ"
+      ],
+      "ans": "100 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_02",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "איזו יחידת מידה מתאימה למדידת אורך של עיפרון?",
+      "options": [
+        "סנטימטר (ס\"מ)",
+        "מטר (מ')",
+        "קילומטר (ק\"מ)",
+        "ליטר"
+      ],
+      "ans": "סנטימטר (ס\"מ)",
+      "visual": ""
+    },
+    {
+      "id": "len_03",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "איזו יחידת מידה מתאימה למדידת אורך של כיתת לימוד?",
+      "options": [
+        "מטר (מ')",
+        "סנטימטר (ס\"מ)",
+        "מילימטר (מ\"מ)",
+        "גרם"
+      ],
+      "ans": "מטר (מ')",
+      "visual": ""
+    },
+    {
+      "id": "len_04",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "איזה אורך גדול יותר?",
+      "options": [
+        "1 מטר",
+        "85 ס\"מ",
+        "50 ס\"מ",
+        "99 ס\"מ"
+      ],
+      "ans": "1 מטר",
+      "visual": ""
+    },
+    {
+      "id": "len_05",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "היקף של ריבוע מחושב בחיבור 4 צלעותיו. אורך כל צלע 6 ס\"מ. מהו ההיקף?",
+      "options": [
+        "24 ס\"מ",
+        "12 ס\"מ",
+        "36 ס\"מ",
+        "18 ס\"מ"
+      ],
+      "ans": "24 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_06",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "אורכו של חבל היה 74 ס\"מ. גזרו ממנו קטע באורך 18 ס\"מ.<br>מה אורך החבל שנשאר?",
+      "options": [
+        "56 ס\"מ",
+        "66 ס\"מ",
+        "47 ס\"מ",
+        "74 ס\"מ"
+      ],
+      "ans": "56 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_07",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "אורך כל צלע בריבוע הוא 8 ס\"מ.<br>מהו היקף הריבוע?",
+      "options": [
+        "32 ס\"מ",
+        "16 ס\"מ",
+        "36 ס\"מ",
+        "12 ס\"מ"
+      ],
+      "ans": "32 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_08",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "לדנה יש סרט באורך 54 ס\"מ. כמה סנטימטרים חסרים לה כדי להגיע לאורך של 1 מטר (100 ס\"מ)?",
+      "options": [
+        "46 ס\"מ",
+        "56 ס\"מ",
+        "37 ס\"מ",
+        "54 ס\"מ"
+      ],
+      "ans": "46 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_09",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "חיברו שני מקלות ברצף: מקל אחד באורך 36 ס\"מ ומקל שני באורך 22 ס\"מ.<br>מהו האורך הכולל של שני המקלות יחד?",
+      "options": [
+        "58 ס\"מ",
+        "68 ס\"מ",
+        "19 ס\"מ",
+        "53 ס\"מ"
+      ],
+      "ans": "58 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_10",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "אורכו של חבל היה 94 ס\"מ. גזרו ממנו קטע באורך 33 ס\"מ.<br>מה אורך החבל שנשאר?",
+      "options": [
+        "61 ס\"מ",
+        "71 ס\"מ",
+        "52 ס\"מ",
+        "94 ס\"מ"
+      ],
+      "ans": "61 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_11",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "אורך כל צלע בריבוע הוא 14 ס\"מ.<br>מהו היקף הריבוע?",
+      "options": [
+        "56 ס\"מ",
+        "28 ס\"מ",
+        "60 ס\"מ",
+        "18 ס\"מ"
+      ],
+      "ans": "56 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_12",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "לדנה יש סרט באורך 26 ס\"מ. כמה סנטימטרים חסרים לה כדי להגיע לאורך של 1 מטר (100 ס\"מ)?",
+      "options": [
+        "74 ס\"מ",
+        "84 ס\"מ",
+        "65 ס\"מ",
+        "26 ס\"מ"
+      ],
+      "ans": "74 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_13",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "חיברו שני מקלות ברצף: מקל אחד באורך 20 ס\"מ ומקל שני באורך 42 ס\"מ.<br>מהו האורך הכולל של שני המקלות יחד?",
+      "options": [
+        "62 ס\"מ",
+        "72 ס\"מ",
+        "27 ס\"מ",
+        "57 ס\"מ"
+      ],
+      "ans": "62 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_14",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "אורכו של חבל היה 73 ס\"מ. גזרו ממנו קטע באורך 24 ס\"מ.<br>מה אורך החבל שנשאר?",
+      "options": [
+        "49 ס\"מ",
+        "59 ס\"מ",
+        "40 ס\"מ",
+        "73 ס\"מ"
+      ],
+      "ans": "49 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_15",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "אורך כל צלע בריבוע הוא 14 ס\"מ.<br>מהו היקף הריבוע?",
+      "options": [
+        "56 ס\"מ",
+        "28 ס\"מ",
+        "60 ס\"מ",
+        "18 ס\"מ"
+      ],
+      "ans": "56 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_16",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "לדנה יש סרט באורך 54 ס\"מ. כמה סנטימטרים חסרים לה כדי להגיע לאורך של 1 מטר (100 ס\"מ)?",
+      "options": [
+        "46 ס\"מ",
+        "56 ס\"מ",
+        "37 ס\"מ",
+        "54 ס\"מ"
+      ],
+      "ans": "46 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_17",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "חיברו שני מקלות ברצף: מקל אחד באורך 23 ס\"מ ומקל שני באורך 25 ס\"מ.<br>מהו האורך הכולל של שני המקלות יחד?",
+      "options": [
+        "48 ס\"מ",
+        "58 ס\"מ",
+        "7 ס\"מ",
+        "43 ס\"מ"
+      ],
+      "ans": "48 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_18",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "אורכו של חבל היה 73 ס\"מ. גזרו ממנו קטע באורך 24 ס\"מ.<br>מה אורך החבל שנשאר?",
+      "options": [
+        "49 ס\"מ",
+        "59 ס\"מ",
+        "40 ס\"מ",
+        "73 ס\"מ"
+      ],
+      "ans": "49 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_19",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "אורך כל צלע בריבוע הוא 9 ס\"מ.<br>מהו היקף הריבוע?",
+      "options": [
+        "36 ס\"מ",
+        "18 ס\"מ",
+        "40 ס\"מ",
+        "13 ס\"מ"
+      ],
+      "ans": "36 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_20",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "לדנה יש סרט באורך 52 ס\"מ. כמה סנטימטרים חסרים לה כדי להגיע לאורך של 1 מטר (100 ס\"מ)?",
+      "options": [
+        "48 ס\"מ",
+        "58 ס\"מ",
+        "39 ס\"מ",
+        "52 ס\"מ"
+      ],
+      "ans": "48 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_21",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "חיברו שני מקלות ברצף: מקל אחד באורך 37 ס\"מ ומקל שני באורך 30 ס\"מ.<br>מהו האורך הכולל של שני המקלות יחד?",
+      "options": [
+        "67 ס\"מ",
+        "77 ס\"מ",
+        "12 ס\"מ",
+        "62 ס\"מ"
+      ],
+      "ans": "67 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_22",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "אורכו של חבל היה 63 ס\"מ. גזרו ממנו קטע באורך 21 ס\"מ.<br>מה אורך החבל שנשאר?",
+      "options": [
+        "42 ס\"מ",
+        "52 ס\"מ",
+        "33 ס\"מ",
+        "63 ס\"מ"
+      ],
+      "ans": "42 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_23",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "אורך כל צלע בריבוע הוא 10 ס\"מ.<br>מהו היקף הריבוע?",
+      "options": [
+        "40 ס\"מ",
+        "20 ס\"מ",
+        "44 ס\"מ",
+        "14 ס\"מ"
+      ],
+      "ans": "40 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_24",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "לדנה יש סרט באורך 60 ס\"מ. כמה סנטימטרים חסרים לה כדי להגיע לאורך של 1 מטר (100 ס\"מ)?",
+      "options": [
+        "40 ס\"מ",
+        "50 ס\"מ",
+        "31 ס\"מ",
+        "60 ס\"מ"
+      ],
+      "ans": "40 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_25",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "חיברו שני מקלות ברצף: מקל אחד באורך 23 ס\"מ ומקל שני באורך 43 ס\"מ.<br>מהו האורך הכולל של שני המקלות יחד?",
+      "options": [
+        "66 ס\"מ",
+        "76 ס\"מ",
+        "25 ס\"מ",
+        "61 ס\"מ"
+      ],
+      "ans": "66 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_26",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "אורכו של חבל היה 59 ס\"מ. גזרו ממנו קטע באורך 31 ס\"מ.<br>מה אורך החבל שנשאר?",
+      "options": [
+        "28 ס\"מ",
+        "38 ס\"מ",
+        "19 ס\"מ",
+        "59 ס\"מ"
+      ],
+      "ans": "28 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_27",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "אורך כל צלע בריבוע הוא 13 ס\"מ.<br>מהו היקף הריבוע?",
+      "options": [
+        "52 ס\"מ",
+        "26 ס\"מ",
+        "56 ס\"מ",
+        "17 ס\"מ"
+      ],
+      "ans": "52 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_28",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "לדנה יש סרט באורך 38 ס\"מ. כמה סנטימטרים חסרים לה כדי להגיע לאורך של 1 מטר (100 ס\"מ)?",
+      "options": [
+        "62 ס\"מ",
+        "72 ס\"מ",
+        "53 ס\"מ",
+        "38 ס\"מ"
+      ],
+      "ans": "62 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_29",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "חיברו שני מקלות ברצף: מקל אחד באורך 16 ס\"מ ומקל שני באורך 33 ס\"מ.<br>מהו האורך הכולל של שני המקלות יחד?",
+      "options": [
+        "49 ס\"מ",
+        "59 ס\"מ",
+        "22 ס\"מ",
+        "44 ס\"מ"
+      ],
+      "ans": "49 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_30",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "אורכו של חבל היה 92 ס\"מ. גזרו ממנו קטע באורך 40 ס\"מ.<br>מה אורך החבל שנשאר?",
+      "options": [
+        "52 ס\"מ",
+        "62 ס\"מ",
+        "43 ס\"מ",
+        "92 ס\"מ"
+      ],
+      "ans": "52 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_31",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "אורך כל צלע בריבוע הוא 8 ס\"מ.<br>מהו היקף הריבוע?",
+      "options": [
+        "32 ס\"מ",
+        "16 ס\"מ",
+        "36 ס\"מ",
+        "12 ס\"מ"
+      ],
+      "ans": "32 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_32",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "לדנה יש סרט באורך 81 ס\"מ. כמה סנטימטרים חסרים לה כדי להגיע לאורך של 1 מטר (100 ס\"מ)?",
+      "options": [
+        "19 ס\"מ",
+        "29 ס\"מ",
+        "10 ס\"מ",
+        "81 ס\"מ"
+      ],
+      "ans": "19 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_33",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "חיברו שני מקלות ברצף: מקל אחד באורך 25 ס\"מ ומקל שני באורך 22 ס\"מ.<br>מהו האורך הכולל של שני המקלות יחד?",
+      "options": [
+        "47 ס\"מ",
+        "57 ס\"מ",
+        "8 ס\"מ",
+        "42 ס\"מ"
+      ],
+      "ans": "47 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_34",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "אורכו של חבל היה 78 ס\"מ. גזרו ממנו קטע באורך 38 ס\"מ.<br>מה אורך החבל שנשאר?",
+      "options": [
+        "40 ס\"מ",
+        "50 ס\"מ",
+        "31 ס\"מ",
+        "78 ס\"מ"
+      ],
+      "ans": "40 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_35",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "אורך כל צלע בריבוע הוא 15 ס\"מ.<br>מהו היקף הריבוע?",
+      "options": [
+        "60 ס\"מ",
+        "30 ס\"מ",
+        "64 ס\"מ",
+        "19 ס\"מ"
+      ],
+      "ans": "60 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_36",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "לדנה יש סרט באורך 70 ס\"מ. כמה סנטימטרים חסרים לה כדי להגיע לאורך של 1 מטר (100 ס\"מ)?",
+      "options": [
+        "30 ס\"מ",
+        "40 ס\"מ",
+        "21 ס\"מ",
+        "70 ס\"מ"
+      ],
+      "ans": "30 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_37",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "חיברו שני מקלות ברצף: מקל אחד באורך 36 ס\"מ ומקל שני באורך 42 ס\"מ.<br>מהו האורך הכולל של שני המקלות יחד?",
+      "options": [
+        "78 ס\"מ",
+        "88 ס\"מ",
+        "11 ס\"מ",
+        "73 ס\"מ"
+      ],
+      "ans": "78 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_38",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "אורכו של חבל היה 78 ס\"מ. גזרו ממנו קטע באורך 31 ס\"מ.<br>מה אורך החבל שנשאר?",
+      "options": [
+        "47 ס\"מ",
+        "57 ס\"מ",
+        "38 ס\"מ",
+        "78 ס\"מ"
+      ],
+      "ans": "47 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_39",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "אורך כל צלע בריבוע הוא 8 ס\"מ.<br>מהו היקף הריבוע?",
+      "options": [
+        "32 ס\"מ",
+        "16 ס\"מ",
+        "36 ס\"מ",
+        "12 ס\"מ"
+      ],
+      "ans": "32 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_40",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "לדנה יש סרט באורך 33 ס\"מ. כמה סנטימטרים חסרים לה כדי להגיע לאורך של 1 מטר (100 ס\"מ)?",
+      "options": [
+        "67 ס\"מ",
+        "77 ס\"מ",
+        "58 ס\"מ",
+        "33 ס\"מ"
+      ],
+      "ans": "67 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_41",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "חיברו שני מקלות ברצף: מקל אחד באורך 23 ס\"מ ומקל שני באורך 17 ס\"מ.<br>מהו האורך הכולל של שני המקלות יחד?",
+      "options": [
+        "40 ס\"מ",
+        "50 ס\"מ",
+        "11 ס\"מ",
+        "35 ס\"מ"
+      ],
+      "ans": "40 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_42",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "אורכו של חבל היה 63 ס\"מ. גזרו ממנו קטע באורך 38 ס\"מ.<br>מה אורך החבל שנשאר?",
+      "options": [
+        "25 ס\"מ",
+        "35 ס\"מ",
+        "16 ס\"מ",
+        "63 ס\"מ"
+      ],
+      "ans": "25 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_43",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "אורך כל צלע בריבוע הוא 15 ס\"מ.<br>מהו היקף הריבוע?",
+      "options": [
+        "60 ס\"מ",
+        "30 ס\"מ",
+        "64 ס\"מ",
+        "19 ס\"מ"
+      ],
+      "ans": "60 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_44",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "לדנה יש סרט באורך 67 ס\"מ. כמה סנטימטרים חסרים לה כדי להגיע לאורך של 1 מטר (100 ס\"מ)?",
+      "options": [
+        "33 ס\"מ",
+        "43 ס\"מ",
+        "24 ס\"מ",
+        "67 ס\"מ"
+      ],
+      "ans": "33 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_45",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "חיברו שני מקלות ברצף: מקל אחד באורך 34 ס\"מ ומקל שני באורך 43 ס\"מ.<br>מהו האורך הכולל של שני המקלות יחד?",
+      "options": [
+        "77 ס\"מ",
+        "87 ס\"מ",
+        "14 ס\"מ",
+        "72 ס\"מ"
+      ],
+      "ans": "77 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_46",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "אורכו של חבל היה 81 ס\"מ. גזרו ממנו קטע באורך 30 ס\"מ.<br>מה אורך החבל שנשאר?",
+      "options": [
+        "51 ס\"מ",
+        "61 ס\"מ",
+        "42 ס\"מ",
+        "81 ס\"מ"
+      ],
+      "ans": "51 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_47",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "אורך כל צלע בריבוע הוא 8 ס\"מ.<br>מהו היקף הריבוע?",
+      "options": [
+        "32 ס\"מ",
+        "16 ס\"מ",
+        "36 ס\"מ",
+        "12 ס\"מ"
+      ],
+      "ans": "32 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_48",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "לדנה יש סרט באורך 30 ס\"מ. כמה סנטימטרים חסרים לה כדי להגיע לאורך של 1 מטר (100 ס\"מ)?",
+      "options": [
+        "70 ס\"מ",
+        "80 ס\"מ",
+        "61 ס\"מ",
+        "30 ס\"מ"
+      ],
+      "ans": "70 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_49",
+      "category": "length",
+      "difficulty": "easy",
+      "q": "חיברו שני מקלות ברצף: מקל אחד באורך 21 ס\"מ ומקל שני באורך 39 ס\"מ.<br>מהו האורך הכולל של שני המקלות יחד?",
+      "options": [
+        "60 ס\"מ",
+        "70 ס\"מ",
+        "23 ס\"מ",
+        "55 ס\"מ"
+      ],
+      "ans": "60 ס\"מ",
+      "visual": ""
+    },
+    {
+      "id": "len_50",
+      "category": "length",
+      "difficulty": "medium",
+      "q": "אורכו של חבל היה 64 ס\"מ. גזרו ממנו קטע באורך 23 ס\"מ.<br>מה אורך החבל שנשאר?",
+      "options": [
+        "41 ס\"מ",
+        "51 ס\"מ",
+        "32 ס\"מ",
+        "64 ס\"מ"
+      ],
+      "ans": "41 ס\"מ",
+      "visual": ""
+    }
+  ]
+}
